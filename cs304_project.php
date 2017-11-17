@@ -38,7 +38,7 @@
 
     </style>
 
-    <h1 class="siteTitle">Welcome to House2Go</h1>
+    <h1 class="siteTitle"> to House2Go</h1>
 
     <div class="management">
         <div class="col-md-6 view">
