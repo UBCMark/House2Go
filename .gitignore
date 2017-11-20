@@ -6,3 +6,4 @@ management.html
 *.xml
 *.xml
 .idea/workspace.xml
+.idea/
