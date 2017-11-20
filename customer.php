@@ -59,11 +59,17 @@
         background-color: #f2f2f2;
         padding: 20px;
     }
+
+    .column {
+        float: left;
+        margin: 0;
+        width: 40%;
+    }
 </style>
 
 <h1 class="text-center">Customer View</h1>
 
-<div class="customerView">
+<div class="column">
 
     <div class="search-house">
         <label>Search for House</label>

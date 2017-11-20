@@ -60,11 +60,17 @@
         background-color: #f2f2f2;
         padding: 20px;
     }
+
+    .column {
+        float: left;
+        margin: 0;
+        width: 40%;
+    }
 </style>
 
 <h1 class="text-center">Host View</h1>
 
-<div class="hostView">
+<div class="column">
     <div class="add-host">
         <label>Add New House</label>
         <form method="post" action="host.php">
@@ -228,7 +234,7 @@ function printHouses($result)
 {
     echo "<br>Got data from tables:<br>";
     echo "<table>";
-    echo "<th><th>host ID</th><th>House ID</th><th>Location</th><th>type</th><th>rating</th><th>initial charge</th></tr>";
+    echo "<th><th>Host ID</th><th>House ID</th><th>Location</th><th>type</th><th>rating</th><th>initial charge</th></tr>";
 
     while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
         //echo $row[0];

@@ -59,12 +59,19 @@
         background-color: #f2f2f2;
         padding: 20px;
     }
+
+    .column {
+        float: left;
+        margin: 0;
+        width: 40%;
+    }
+
 </style>
 
 
 <h1 class="text-center">Management View</h1>
 
-<div class="managementView">
+<div class="column">
 
     <div class="add-cus">
         <label>Add Customer</label>
