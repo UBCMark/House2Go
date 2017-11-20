@@ -316,7 +316,7 @@ if ($db_conn) {
         $queryi = "insert into customer values ('$bind1', '$bind2', '$bind3', $bind4, $bind5, '$bind6')";
         $statement = oci_parse($db_conn, $queryi);
         oci_execute($statement);
-        echo 'insert success!';
+        echo 'insert successful!';
 
         //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
         OCICommit($db_conn);
