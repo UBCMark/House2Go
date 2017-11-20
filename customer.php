@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="customer.css">
+
 </head>
 
 <body>
@@ -28,74 +30,124 @@
     </div>
 </nav>
 
-<style>
-    input[type=text], select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    input[type=submit] {
-        width: 100%;
-        background-color: #218cb8;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-        background-color: #2176a2;
-    }
-
-    div {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-    }
-
-    .column {
-        float: left;
-        margin: 0;
-        width: 40%;
-    }
-</style>
 
 <h1 class="text-center">Customer View</h1>
 
 <div class="column">
 
     <div class="search-house">
-        <label>Search for House</label>
+        <label>Search House</label>
+        <br>
+        <form method="post" action="customer.php">
+            <!-- refresh page -->
+            <input type="text" name="houseid" placeholder="House ID">
+            <input type="text" name="housenam" placeholder="Name">
+            <input type="text" name="housecity" placeholder="City">
+            <input type="text" name="houseprov" placeholder="Province">
+            <input type="text" name="housecoun" placeholder="Country">
+            <input type="text" name="houserat" placeholder="Rating">
+
+        </form>
+        <br>
+        <p><input type="submit" value="Search" name="searchhousesubmit"></p>
+    </div>
+
+    <form>
+        <div class="search-house">
+            <label>Customer Looking for House</label>
+            <form method="POST" action="customer.php">
+                <!--refresh page when submit-->
+
+                <p><input type="text" name="housetype" placeholder="House Type">
+                    <input type="text" name="rating" placeholder="Rating">
+                    <input type="text" name="starttime" placeholder="Start Time">
+                    <input type="text" name="endtime" placeholder="End Time"> </p>
+
+                <p><input type="submit" value="Find House!" name="findhouse"></p>
+        </div>
+    </form>
+
+
+    <form>
+
+        <div class="reserve house">
+            <label>Reserve your house!</label>
+            <form method="POST" action="customer.php">
+                <!--refresh page when submit-->
+
+                <p><input type="text" name="house_id" placeholder="House ID">
+                    <input type="text" name="customer_id" placeholder="Customer ID">
+                    <input type="text" name="starttime" placeholder="Start Time">
+                    <input type="text" name="endtime" placeholder="End Time"> </p>
+
+                <p><input type="submit" value="Reserve!" name="reservehouse"></p>
+        </div>
+    </form>
+
+    <div class="accepted">
+        <label>See My Accepted Reservation</label>
         <form method="POST" action="customer.php">
             <!--refresh page when submit-->
 
-            <p><input type="text" name="housetype" placeholder="House Type">
-                <input type="text" name="rating" placeholder="Rating">
+            <p><input type="text" name="customer_id" placeholder="Customer ID"></p>
+
+            <p><input type="submit" value="See Accepted Reservation" name="accepted"></p>
+    </div>
+    </form>
+
+    <div class="pay">
+        <label>Make Payment Below (Sign Contract)</label>
+        <form method="POST" action="customer.php">
+            <!--refresh page when submit-->
+
+            <p><input type="text" name="customer_id" placeholder="Customer ID">
+                <input type="text" name="refno" placeholder="Reference No">
+                <input type="text" name="cardtype" placeholder="Card Type">
+                <input type="text" name="cardname" placeholder="Name on Card">
+                <input type="text" name= "card#" placeholder="Card Number">
             </p>
 
-            <p><input type="submit" value="Find House!" name="findhouse"></p>
+            <p><input type="submit" value="Accept and Pay!" name="pay"></p>
+    </div>
+    </form>
+
+    <div class="payment history">
+        <label>Register for Member</label>
+        <form method="POST" action="customer.php">
+            <!--refresh page when submit-->
+
+            <p><input type="text" name="customer_id" placeholder="Customer ID">
+
+
+            <p><input type="submit" value="See my payments" name="paymenthistory"></p>
     </div>
     </form>
 
 
-    <div class="reserve house">
-        <label>Reserve your house!</label>
-        <form method="POST" action="customer.php">
-            <!--refresh page when submit-->
+    <div class="Change-StartTime">
+        <label>Change Move-in Time</label>
 
-            <p><input type="text" name="house_id" placeholder="House ID">
-                <input type="text" name="customer_id" placeholder="Customer ID">
-                <input type="text" name="starttime" placeholder="Start Time">
-                <input type="text" name="endtime" placeholder="End Time"></p>
+        <form method="post" action="customer.php">
+            <!-- refresh page -->
+            <input type="text" name="refn" placeholder="Reservation Reference#">
+            <input type="text" name="stime" placeholder="Start Time">
 
-            <p><input type="submit" value="Reserve!" name="reservehouse"></p>
+            <p><input type="submit" value = "Change Time" name="changetimesubmit"></p>
+    </div>
+    </form>
+
+    <!--    update P-->
+    <!--    set P.START_TIME = '$bind1'-->
+    <!--    from TIMEPERIOD P-->
+    <!--    where P.RESERVATION_REFERENCE# = '$bind2'-->
+    <div class="show contract time">
+        <label>Show Booked Time</label>
+
+        <form method="post" action="customer.php">
+            <!-- refresh page -->
+            <input type="text" name="thid" placeholder="House ID">
+
+            <p><input type="submit" value = "Show Now" name="showunavailablesubmit"></p>
     </div>
     </form>
 
@@ -136,17 +188,6 @@
     </form>
 
 
-    <div class="housetime">
-        <label>Find the right time!</label>
-        <form method="POST" action="customer.php">
-            <!--refresh page when submit-->
-
-            <p><input type="text" name="house_id" placeholder="House ID">
-
-            <p><input type="submit" value="Unavailable time!" name="times"></p>
-    </div>
-    </form>
-
     <div class="averagerating">
         <label> Average Rating</label>
         <form method="POST" action="customer.php">
@@ -158,17 +199,17 @@
     </div>
     </form>
 
+    <div class="Member-pay">
+        <label>Member Pay</label>
 
-    <div class="memeberprice">
-        <label>My Fee</label>
-        <form method="POST" action="customer.php">
-            <!--refresh page when submit-->
+        <form method="post" action="customer.php">
+            <!-- refresh page -->
+            <input type="text" name="conid" placeholder="Contract ID">
+            <input type="text" name="cusid" placeholder="Customer ID">
 
-            <p><input type="text" name="customer_id" placeholder="Customer ID">
-                <input type="text" name="contract_id" placeholder="Contract ID"></p>
-
-            <p><input type="submit" value="Fee" name="mprice"></p>
+            <p><input type="submit" value = "Pay" name="memberpaysubmit"></p>
     </div>
+    </form>
     </form>
 </div>
 
@@ -190,8 +231,7 @@ session_start();
 $success = True; //keep track of errors so it redirects the page only if there are no errors
 $db_conn = OCILogon("ora_f4l0b", "a60250157", "dbhost.ugrad.cs.ubc.ca:1522/ug");
 
-function executePlainSQL($cmdstr)
-{ //takes a plain (no bound variables) SQL command and executes it
+function executePlainSQL($cmdstr) { //takes a plain (no bound variables) SQL command and executes it
     //echo "<br>running ".$cmdstr."<br>";
     global $db_conn, $success;
     $statement = OCIParse($db_conn, $cmdstr); //There is a set of comments at the end of the file that describe some of the OCI specific functions and how they work
@@ -217,8 +257,7 @@ function executePlainSQL($cmdstr)
 
 }
 
-function executeBoundSQL($cmdstr, $list)
-{
+function executeBoundSQL($cmdstr, $list) {
     /* Sometimes the same statement will be executed for several times ... only
      the value of variables need to be changed.
      In this case, you don't need to create the statement several times;
@@ -256,70 +295,258 @@ function executeBoundSQL($cmdstr, $list)
 
 }
 
+
 function printcontracts($result)
 { //prints results from a select statement
     echo "<br>These are your contracts:<br>";
-    echo "<table>";
-    echo "<th><th>House Location</th><th>House Rating</th><th>Daily Rate</th><th>";
+    echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+    echo "<tr><th>House Location</th><th>House Rating</th><th>Daily Rate</th></tr>";
 
     while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
         // echo $row[0];
-        echo "<tr><td>" . $row["HOUSE_LOCATION"] . "</td><td>" . $row["HOUSE_RATING"] . "</td><td>" . $row["TYPE_DAILYRATE"] . "</td></tr>"; //or just use "echo $row[0]"
+        echo '<tr>';
+        echo "<td>" . $row["HOUSE_LOCATION"] . "</td><td>" . $row["HOUSE_RATING"] . "</td><td>" . $row["TYPE_DAILYRATE"] . "</td>"; //or just use "echo $row[0]"
+        echo '</tr>';
     }
     echo "</table>";
-
 }
-
-
 function printpayments($result)
 { //prints results from a select statement
-    echo "<br>Got data from table tab1:<br>";
-    echo "<table>";
-    echo "<th><th> Payment ID</th><th> Payment Amount</th><th> Payment Method";
+    echo "<br>These are your payments<br>";
+    echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+    echo "<tr><th> Payment ID</th><th> Payment Amount</th><th> Payment Method </th></tr>";
 
     while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
-        // echo $row[0];
-        echo "<tr><td>" . $row["PAYMENT_ID"] . "</td><td>" . $row["PAYMENT_AMOUNT"] . "</td><td>" . $row["PAYMENT_CARDTYPE"] . "</td></tr>";
+        echo '<tr>';
+        echo "<td>" . $row["PAYMENT_ID"] . "</td><td>" . $row["PAYMENT_AMOUNT"] . "</td><td>" . $row["PAYMENT_CARDTYPE"] . "</td>";
+        echo '</tr>';
+    }
+    echo "</table>";
+
+
+}
+
+function printResult($result) { //prints results from a select statement
+    echo "<br>Got data from table tab1:<br>";
+    echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+    echo "<tr><th>HOUSE ID</th><th>Location</th><th>Availability</th><th>House Rules</th><th>House Rating</th><th>Host ID</th><th>House Type</th></tr>";
+
+    while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
+        echo '<tr>';
+        echo "<td>" . $row["HOUSE_ID"] . "</td><td>" . $row["HOUSE_LOCATION"] . "</td><td>" . $row["HOUSE_AVAILABILITY"] . "</td></tr>"
+            . $row["HOUSE_RULES"] . "</td><td>" . $row["HOUSE_RATING"] . "</td><td>" . $row["HOST__ID"] . "</td></tr>". $row["TYPE__NAME"] . "</td>"; //or just use "echo $row[0]"
+        echo '</tr>';;
     }
     echo "</table>";
 
 }
-
-function printResult($result)
-{ //prints results from a select statement
-    echo "<br>Got data from table tab1:<br>";
-    echo "<table>";
-    echo "<th><th>HOUSE ID</th><th>Location</th><th>Availability</th></th>House Rules</th><th>House Rating</th><th>Host ID</th></th>House Type</th><th>";
-
-    while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
-        // echo $row[0];
-        echo "<tr><td>" . $row["HOUSE_ID"] . "</td><td>" . $row["HOUSE_LOCATION"] . "</td><td>" . $row["HOUSE_AVAILABILITY"] . "</td></tr>"
-            . $row["HOUSE_RULES"] . "</td><td>" . $row["HOUSE_RATING"] . "</td><td>" . $row["HOST__ID"] . "</td></tr>" . $row["TYPE__NAME"] . "</td></tr>"; //or just use "echo $row[0]"
-    }
-    echo "</table>";
-
-}
-
-
 
 function printHouses($result)
 {
-    echo "<br>Got data from tables:<br>";
-    echo "<table>";
-    echo "<th><th>host ID</th><th>House ID</th><th>Location</th><th>type</th><th>rating</th><th>initial charge</th></tr>";
+    echo "<br>These are your houses:<br>";
+    echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+    echo "<tr><th>host ID</th><th>House ID</th><th>Location</th><th>type</th><th>rating</th><th>initial charge</th></tr>";
 
     while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
-        //echo $row[0];
-        echo "<tr> <td>" . $row["HOST_ID"] . "</td><td>" . $row["HOUSE_ID"] . "</td><td>" . $row["HOUSE_LOCATION"] . "</td><td>" . $row["TYPE_NAME"] . "</td><td>"
-            . $row["HOUSE_RATING"] . "</td><td>" . $row["TYPE_INITIALCHARGE"] . "</td></tr>";
-        //or just use "echo $row[0]"
+        echo '<tr>';
+        echo "<td>" . $row["HOST_ID"] . "</td><td>" . $row["HOUSE_ID"] . "</td><td>" . $row["HOUSE_LOCATION"] . "</td><td>" . $row["TYPE_NAME"] . "</td><td>"
+            . $row["HOUSE_RATING"] . "</td><td>" . $row["TYPE_INITIALCHARGE"] . "</td>";
+        echo '</tr>';
     }
     echo "</table>";
 }
+
+function   printreservations($result) {
+    echo "<br>These are reservations you've received:<br>";
+    echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+    echo "<tr><th>reservation reference#</th><th>customer id</th><th>host id </th><th>house id</th><th>reservation status </th><th>start time</th><th>end time</th></tr>";
+
+    while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
+        echo '<tr>';
+        echo "<td>" . $row["RESERVATION_REFERENCE#"] . "</td><td>" . $row["CUSTOMER_ID"] . "</td><td>" . $row["HOST_ID"] . "</td><td>" . $row["HOUSE_ID"] . "</td><td>"
+            . $row["RESERVATION_STATUS"] . "</td><td>" . $row["START_TIME"] . "</td><td>" . $row["END_TIME"] . "</td>";
+        echo '</tr>';
+    }
+    echo "</table>";
+}
+
+function   printaccepted($result) {
+    echo "<br>These are your accepted reservations:<br>";
+    echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+    echo "<th><th>reservation reference#</th><th>customer id</th><th>host id </th><th>house id</th><th>reservation status </th><th>start time</th><th>end time</th></tr>";
+
+    while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
+        echo '<tr>';
+        echo "<td>" . $row["RESERVATION_REFERENCE#"] . "</td><td>" . $row["CUSTOMER_ID"] . "</td><td>" . $row["HOST_ID"] . "</td><td>" . $row["HOUSE_ID"] . "</td><td>"
+            . $row["RESERVATION_STATUS"] . "</td><td>" . $row["START_TIME"] . "</td><td>" . $row["END_TIME"] . "</td>";
+        echo '</tr>';
+    }
+    echo "</table>";
+}
+
 
 // Connect Oracle...
 if ($db_conn) {
 
+
+    if (array_key_exists('pay', $_POST)) {
+
+        $bind1 = $_POST['customer_id'];
+        $bind2 = $_POST['refno'];
+        $bind3 = $_POST['cardtype'];
+        $bind4 = $_POST['cardname'];
+        $bind5 = $_POST['card#'];
+
+        $query01 = "select reservation.house_id
+            from reservation 
+            where reservation.reservation_reference# = '$bind2'";
+        $query02 = "select reservation.customer_id
+            from reservation 
+            where reservation.reservation_reference# = '$bind2'";
+        $query03 = "select reservation.host_id
+            from reservation 
+            where reservation.reservation_reference# = '$bind2'";
+
+        $query04 = "select reservation.reservation_status
+            from reservation 
+            where reservation.reservation_reference# = '$bind2'";
+
+        $statement01 = oci_parse($db_conn, $query01);
+        oci_execute($statement01);
+        $houseid = OCI_Fetch_Array($statement01,OCI_BOTH)[0];
+
+
+        $statement02 = oci_parse($db_conn, $query02);
+        oci_execute($statement02);
+        $cid = OCI_Fetch_Array($statement02,OCI_BOTH)[0];
+
+        $statement03 = oci_parse($db_conn, $query03);
+        oci_execute($statement03);
+        $hostid = OCI_Fetch_Array($statement03,OCI_BOTH)[0];
+
+        $statement04 = oci_parse($db_conn, $query04);
+        oci_execute($statement04);
+        $status = OCI_Fetch_Array($statement04,OCI_BOTH)[0];
+
+
+        if ($bind1 != $cid) {
+            echo "wrong name";
+            return;
+        };
+
+        if ($status != 'accepted') {
+            echo "Invalid Reservation!!";
+            return;
+        };
+
+
+
+        $number = mt_rand (10000,99999);
+        $conID = mt_rand (10000,99999);
+        $query1 = "select type_initialcharge
+            from reservation c, house h, housetype ht
+            where c.reservation_reference# = '$bind2' AND c.house_id = h.house_id AND h.type_name = ht.type_name";
+
+        $query4 = "select type_dailyrate
+            from reservation c, house h, housetype ht
+            where c.reservation_reference# = '$bind2' AND c.house_id = h.house_id AND h.type_name = ht.type_name";
+
+        $query2 = "select member_rewardpoints
+            from member
+            where customer_id = '$bind1'";
+
+        $query3 = "select end_time-start_time
+            from reservation c,timeperiod t
+            where c.reservation_reference# = t.reservation_reference# AND reservation_reference# = '$bind2'";
+
+        $statement1 = oci_parse($db_conn, $query1);
+        oci_execute($statement1);
+        $result1 = OCI_Fetch_Array($statement1,OCI_BOTH);
+
+        $statement4 = oci_parse($db_conn, $query4);
+        oci_execute($statement4);
+        $result4 = OCI_Fetch_Array($statement4,OCI_BOTH);
+
+        $statement2 = oci_parse($db_conn, $query2);
+        oci_execute($statement2);
+        $result2 = OCI_Fetch_Array($statement2,OCI_BOTH);
+
+        $statement3 = oci_parse($db_conn, $query3);
+        oci_execute($statement3);
+        $result3 = OCI_Fetch_Array($statement3,OCI_BOTH);
+
+
+        $amount = $result1[0] + $result4[0] * $result3[0];
+        echo  $amount;
+        $queryi001 = "insert into payment values ('$number', '$amount', '$bind3', '$bind4', '$bind5', 0)";
+        $queryi002 = "insert into contract values ('$conID', '$bind2', '$bind1', '$hostid', '$number', '$houseid')";
+        $queryi003 = "update reservation set reservation_status = 'paid' where reservation_reference# = '$bind2'";
+
+        $statement001 = oci_parse($db_conn, $queryi001);
+        $statement002 = oci_parse($db_conn, $queryi002);
+        $statement003  = oci_parse($db_conn, $queryi003);
+        oci_execute($statement001);
+        oci_execute($statement002);
+        oci_execute($statement003);
+
+
+        echo 'Paid!! Your Payment id is :' . $number;
+
+        //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
+        OCICommit($db_conn);
+    }
+    if (array_key_exists('accepted', $_POST)) {
+
+        $bind1 = $_POST['customer_id'];
+
+        $queryi = "select * from reservation join timeperiod on reservation.reservation_reference# = timeperiod.reservation_reference# where customer_id = '$bind1' AND reservation_status = 'accepted'";
+
+        $statement = oci_parse($db_conn, $queryi);
+        oci_execute($statement);
+        printaccepted($statement);
+        echo 'Take Reservation Successfully!';
+
+        //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
+        OCICommit($db_conn);
+    }
+
+    if (array_key_exists('takereservation', $_POST)) {
+
+        $bind1 = $_POST['refno'];
+        $bind2 = $_POST['host_id'];
+
+        $queryi = "select * from reservation where reservation_reference# = '$bind1'";
+
+        while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
+            if ($row["HOST_ID"] != $bind2) {
+                echo "Sorry, you don't have this reservation";
+                return;
+            }
+        }
+
+        $queryi = "update reservation set reservation_status = 'accepted' where reservation_reference# = '$bind1'";
+        $statement = oci_parse($db_conn, $queryi);
+        oci_execute($statement);
+        echo 'Take Reservation Successfully!';
+
+        //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
+        OCICommit($db_conn);
+    }
+    if (array_key_exists('reservations', $_POST)) {
+
+        $bind1 = $_POST['host_id'];
+
+
+        $queryi = "select * from reservation join timeperiod on reservation.reservation_reference# = timeperiod.reservation_reference# where reservation.host_id = '$bind1'
+                                    ";
+        $statement = oci_parse($db_conn, $queryi);
+        oci_execute($statement);
+        printreservations($statement);
+        echo 'insert success!';
+
+        //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
+        OCICommit($db_conn);
+    }
 
     if (array_key_exists('insertsubmit', $_POST)) {
         //Getting the values from user and insert data into the table
@@ -336,7 +563,7 @@ if ($db_conn) {
         $queryi = "insert into customer values ('$bind1', '$bind2', '$bind3', $bind4, $bind5, '$bind6')";
         $statement = oci_parse($db_conn, $queryi);
         oci_execute($statement);
-        echo 'insert successful!';
+        echo 'insert success!';
 
         //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
         OCICommit($db_conn);
@@ -366,6 +593,7 @@ if ($db_conn) {
         $bind4 = $_POST['cph'];
         $bind5 = $_POST['crat'];
         $bind6 = $_POST['cadd'];
+
 
 
         $queryu = "update customer set CUSTOMER_NAME='$bind2', CUSTOMER_EMAIL='$bind3', CUSTOMER_PHONE='$bind4', CUSTOMER_RATING='$bind5', CUSTOMER_ADDRESS='$bind6' where CUSTOMER_ID='$bind1'";
@@ -453,7 +681,40 @@ if ($db_conn) {
 
         $statement = oci_parse($db_conn, $queryct);
         oci_execute($statement);
-        echo 'Your time change will be send to host soon.';
+        echo "Your MOVE-IN time change to '$bind2'.";
+
+        //executeBoundSQL("delete from CUSTOMER where nid=:delNum", $alltuples);
+
+        //executeBoundSQL("update CUSTOMER set CUSTOMER_NAME=:bind2, CUSTOMER_EMAIL=:bind3, CUSTOMER_PHONE=:bind4, CUSTOMER_RATING=:bind5, CUSTOMER_ADDRESS=:bind6 where CUSTOMER_ID=:bind1", $alltuples);
+        OCICommit($db_conn);
+    }
+
+
+    if (array_key_exists('contracthistory', $_POST)) {
+        // Update tuple using data from user
+        // $tuple = array(
+        $bind1 = $_POST['s_date'];
+        $bind2 = $_POST['card_type'];
+
+
+        $queryht = " select contract_id
+        from contract c, payment p, timeperiod t
+          where c.payment_id = p.payment_id AND c.reservation_reference# = t.reservation_reference# AND p.payment_cardtype =  '$bind2' AND t.start_time >=to_date('$bind1')";
+
+        $statement = oci_parse($db_conn, $queryht);
+        oci_execute($statement);
+        echo 'Sorry! Time following time is not available. Good Luck with your other search!';
+        //$result = OCI_Fetch_Array($statement,OCI_BOTH);
+
+        echo '<h4>Contract History</h4>';
+        echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+        echo "<tr><th>Contract ID</th></tr>";
+        while ($row = OCI_Fetch_Array($statement, OCI_BOTH)) {
+            echo '<tr>';
+            echo "<td>" . $row["CONTRACT_ID"]  ."</td>" ; //or just use "echo $row[0]"
+            echo '</tr>';
+        }
+        echo "</table>";
 
         //executeBoundSQL("delete from CUSTOMER where nid=:delNum", $alltuples);
 
@@ -478,10 +739,13 @@ if ($db_conn) {
         echo 'Sorry! Time following time is not available. Good Luck with your other search!';
         //$result = OCI_Fetch_Array($statement,OCI_BOTH);
 
-        echo "<table>";
-        echo "<tr><th>Contract Start_Time</th><th>End_Time</th></tr>";
+        echo '<h4>CONTRACT</h4>';
+        echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+        echo "<tr><th>Start_Time</th><th>End_Time</th></tr>";
         while ($row = OCI_Fetch_Array($statement, OCI_BOTH)) {
-            echo "<tr><td>" . $row["START_TIME"] . "</td><td>" . $row["END_TIME"] . "</td></tr>"; //or just use "echo $row[0]"
+            echo '<tr>';
+            echo "<td>" . $row["START_TIME"] . "</td><td>" . $row["END_TIME"] ."</td>" ; //or just use "echo $row[0]"
+            echo '</tr>';
         }
         echo "</table>";
 
@@ -490,6 +754,7 @@ if ($db_conn) {
         //executeBoundSQL("update CUSTOMER set CUSTOMER_NAME=:bind2, CUSTOMER_EMAIL=:bind3, CUSTOMER_PHONE=:bind4, CUSTOMER_RATING=:bind5, CUSTOMER_ADDRESS=:bind6 where CUSTOMER_ID=:bind1", $alltuples);
         OCICommit($db_conn);
     }
+
 
     if (array_key_exists('memberpaysubmit', $_POST)) {
         // Update tuple using data from user
@@ -516,29 +781,46 @@ if ($db_conn) {
 
         $statement1 = oci_parse($db_conn, $query1);
         oci_execute($statement1);
-        $result1 = OCI_Fetch_Array($statement1, OCI_BOTH);
+        $result1 = OCI_Fetch_Array($statement1,OCI_BOTH);
 
         $statement4 = oci_parse($db_conn, $query4);
         oci_execute($statement4);
-        $result4 = OCI_Fetch_Array($statement4, OCI_BOTH);
+        $result4 = OCI_Fetch_Array($statement4,OCI_BOTH);
 
         $statement2 = oci_parse($db_conn, $query2);
         oci_execute($statement2);
-        $result2 = OCI_Fetch_Array($statement2, OCI_BOTH);
+        $result2 = OCI_Fetch_Array($statement2,OCI_BOTH);
 
         $statement3 = oci_parse($db_conn, $query3);
         oci_execute($statement3);
-        $result3 = OCI_Fetch_Array($statement3, OCI_BOTH);
+        $result3 = OCI_Fetch_Array($statement3,OCI_BOTH);
 
         $allcost = $result1[0] + $result4[0] * $result3[0];
 
-        if ($allcost > $result2) {
+        if($allcost > $result2[0]) {
             $resultAdd = $allcost - $result2[0];
             $leftreward = 0;
-        } else {
+        }else if($allcost <= $result2[0]){
             $resultAdd = 0;
             $leftreward = $result2[0] - $allcost;
         }
+
+        echo "<tr><th>You paid '$allcost'</th></tr>";
+
+        while($allcost>=10){
+            $leftreward = $leftreward + 1;
+            $allcost = $allcost - 10;
+        }
+
+
+        $querycurr = "select MEMBER_REWARDPOINTS from member where CUSTOMER_ID='$bind2'";
+        $statementcurr = oci_parse($db_conn, $querycurr);
+        oci_execute($statementcurr);
+        $resultcurrentPoint = OCI_Fetch_Array($statementcurr,OCI_BOTH);
+
+        $leftreward = $leftreward + $resultcurrentPoint[0];
+
+        echo "<tr><th>You have '$leftreward' points left!</th></tr>";
 
         $queryup = "update member set MEMBER_REWARDPOINTS = '$leftreward' where CUSTOMER_ID='$bind2'";
         $statementfff = oci_parse($db_conn, $queryup);
@@ -550,7 +832,7 @@ if ($db_conn) {
 
     }
 
-    if (array_key_exists('Host Revenue', $_POST)) {
+    if (array_key_exists('Hostrevenuesubmit', $_POST)) {
         // Update tuple using data from user
         // $tuple = array(
         $bind1 = $_POST['stime'];
@@ -558,56 +840,38 @@ if ($db_conn) {
         $bind3 = $_POST['hostid'];
 
 
-        $query1 = "select t1.end_time-t1.start_time
-            from timeperiod t1
-            where t1.start_time>=to_date('$bind1')
-            AND t1.end_time <= to_date ('$bind2')
-            AND reservation_reference#  IN(select t2.reservation_reference#
-            from contract c, timeperiod t2
-            where c.host_id = '$bind3'
-            AND c.reservation_reference# = t2.reservation_reference#)";
+        $query1 = "select p123.payment_amount
+                     from payment p123
+                    where p123.payment_id IN (select c.payment_id
+                                                from contract c
+                                                where c.reservation_reference# IN (select c1.reservation_reference# 	
+                                                                                     from contract c1, timeperiod t 
+                                                                                     where t.start_time>=to_date('$bind1') 
+                                                                                      AND t.end_time <= to_date ('$bind2') 
+                                                                                      AND t.reservation_reference# = c1.reservation_reference# 
+                                                                                      AND c1.host_id = '$bind3'))";
 
+        /*
+         * echo "<tr><th>ID</th><th>Name</th><th>Location</th></tr>";
 
-        $query2 = "	select type_initialcharge
-            from contract c, house h, housetype ht
-            where c.reservation_reference# IN(select t1.reservation_reference#
-            from timeperiod t1
-            where t1.start_time>=to_date('$bind1')
-            AND t1.end_time <= to_date ('$bind2')
-            AND reservation_reference# IN(select t2.reservation_reference#
-            from contract c, timeperiod t2
-            where c.host_id = '$bind3'
-            AND c.reservation_reference# = t2.reservation_reference#))
-            AND c.house_id = h.house_id AND h.type_name = ht.type_name";
-
-        $query3 = "	select type_dailyrate
-            from contract c, house h, housetype ht
-            where c.reservation_reference# IN(select t1.reservation_reference#
-            from timeperiod t1
-            where t1.start_time>=to_date('$bind1')
-            AND t1.end_time <= to_date ('$bind2')
-            AND reservation_reference# IN(select t2.reservation_reference#
-            from contract c, timeperiod t2
-            where c.host_id = '$bind3'
-            AND c.reservation_reference# = t2.reservation_reference#))
-            AND c.house_id = h.house_id AND h.type_name = ht.type_name";
-
-
-        $statement2 = oci_parse($db_conn, $query2);
-        oci_execute($statement2);
-        $result2 = OCI_Fetch_Array($statement2, OCI_BOTH);
-
-        $statement3 = oci_parse($db_conn, $query3);
-        oci_execute($statement3);
-        $result3 = OCI_Fetch_Array($statement3, OCI_BOTH);
+    while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
+        echo "<tr><td>" . $row["NID"] . "</td><td>" . $row["NAME"] . "</td><td>" . $row["LOCATION"] . "</td></tr>"; //or just use "echo $row[0]"
+    }
+         */
 
         $statement1 = oci_parse($db_conn, $query1);
         oci_execute($statement1);
-        echo "<table>";
-        echo "<tr><th>.$bind3.</th><th>Host Revenue</th></tr>";
+        echo '<table cellpadding="0" cellspacing="0" class="db-table">';
+        echo "<tr><th>".$bind3."(seperate)</th><th>Host Revenue (accumulate)</th></tr>";
+
+        $printresult = 0;
         while ($row = OCI_Fetch_Array($statement1, OCI_BOTH)) {
-            echo "<tr><td>" . $row[0] * $result3[0] + $result2[0] . "</td></tr>"; //or just use "echo $row[0]"
+            echo '<tr>';
+            $printresult = $printresult + $row[0];
+            echo "<td>" . $row[0]. "</td><td>".$printresult."</td>" ; //or just use "echo $row[0]"
+            echo '</tr>';
         }
+        echo "<tr><td>TOTAL:</td><td>".$printresult."</td></tr>";
         echo "</table>";
 
 
@@ -698,6 +962,7 @@ if ($db_conn) {
     }
 
 
+
     if (array_key_exists('quit', $_POST)) {
         //Getting the values from user and insert data into the table
         //$tuple = array(
@@ -721,7 +986,7 @@ if ($db_conn) {
                     from house
                           join housetype on house.type_name = housetype.type_name
                             join contract on contract.house_id = house.house_id
-                            where contract.customer_id = '$bind1'";
+                            where contract.customer_id = '$bind1'" ;
 
         $statement = oci_parse($db_conn, $query);
         oci_execute($statement);
@@ -769,12 +1034,12 @@ if ($db_conn) {
                                 where house.house_id= '$hid'";
 
 
-        $statement = oci_parse($db_conn, $query);
-        oci_execute($statement);
+        $statement = oci_parse ($db_conn, $query);
+        oci_execute ($statement);
         while ($row = OCI_Fetch_Array($statement, OCI_BOTH)) {
 
             if ($s_t <= $row["START_TIME"]) {
-                if ($e_t >= $row["START_TIME"]) {
+                if ($e_t  >= $row["START_TIME"]) {
                     echo "<br> Soory!!! Reservation can't be made, as the following time period is booked already </br>";
                     echo "House " . "<tr><td>" . $row["HOUSE_ID"] . " was booked from  </td><td>" . $row["START_TIME"] . " to </td><td>" . $row["END_TIME"] . "</td></tr>";
                     return;
@@ -792,14 +1057,15 @@ if ($db_conn) {
         $row = OCI_Fetch_Array($statement, OCI_BOTH);
 
 
+
         echo $hostid;
-        $number = mt_rand(1000, 9999);
+        $number = mt_rand (1000,9999);
         $query2 = "insert into reservation values ($number, '$cid', '$hostid', '$hid', 'pending')";
         $querytime = "insert into timeperiod values ($number, '$s_t', '$e_t')";
-        $statement = oci_parse($db_conn, $query2);
-        $statement1 = oci_parse($db_conn, $querytime);
-        oci_execute($statement);
-        oci_execute($statement1);
+        $statement = oci_parse ($db_conn, $query2);
+        $statement1 = oci_parse ($db_conn, $querytime);
+        oci_execute ($statement);
+        oci_execute ($statement1);
         echo "reserved!!! Your Reference# is : " . $number;
         OCICommit($db_conn);
 
@@ -817,8 +1083,8 @@ if ($db_conn) {
                                       house.type_name= '$type'
                                       AND house.house_rating= '$rating'";
 
-        $statement = oci_parse($db_conn, $query);
-        oci_execute($statement);
+        $statement = oci_parse ($db_conn, $query);
+        oci_execute ($statement);
         printHouses($statement);
         OCICommit($db_conn);
 
@@ -861,13 +1127,13 @@ if ($db_conn) {
         } else
             if (array_key_exists('updatesubmit', $_POST)) {
                 // Update tuple using data from user
-                $tuple = array(
+                $tuple = array (
                     ":bind1" => $_POST['oldName'],
                     ":bind2" => $_POST['newName'],
                     ":bind3" => $_POST['oldLocation'],
                     ":bind4" => $_POST['newLocation']
                 );
-                $alltuples = array(
+                $alltuples = array (
                     $tuple
                 );
                 executeBoundSQL("update tab1 set name=:bind2, location=:bind4 where name=:bind1 AND location=:bind3", $alltuples);
@@ -878,7 +1144,7 @@ if ($db_conn) {
                     // Insert data into table...
                     executePlainSQL("insert into house values('091', '6335 Thunderbird Crescent', 'yes', 'no smoke', 4, '1234', 'condo' )");
                     // Inserting data into table using bound variables
-                    $list1 = array(
+                    $list1 = array (
                         ":bind1" => '238',
                         ":bind2" => "Crescent Road",
                         ":bind3" => "no",
@@ -888,7 +1154,7 @@ if ($db_conn) {
                         ":bind7" => 'house',
 
                     );
-                    $list2 = array(
+                    $list2 = array (
                         ":bind1" => '298',
                         ":bind2" => "Crescent Road",
                         ":bind3" => "yes",
@@ -898,7 +1164,7 @@ if ($db_conn) {
                         ":bind7" => 'house',
 
                     );
-                    $list3 = array(
+                    $list3 = array (
                         ":bind1" => '278',
                         ":bind2" => "Math Annex",
                         ":bind3" => "yes",

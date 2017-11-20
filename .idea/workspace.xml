@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="516945ea-1c4f-48a6-808a-dea109fddf4e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/host.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/management.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host.php" afterPath="$PROJECT_DIR$/host.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/management.php" afterPath="$PROJECT_DIR$/management.php" />
@@ -36,51 +40,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="management.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="management.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/management.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="467">
+              <caret line="321" column="21" lean-forward="false" selection-start-line="321" selection-start-column="21" selection-end-line="321" selection-end-column="21" />
               <folding>
-                <marker date="1511158048623" expanded="true" signature="12676:12760" ph="insert into customer... " />
-                <marker date="1511158048623" expanded="true" signature="13315:13363" ph="delete from " />
-                <marker date="1511158048623" expanded="true" signature="13953:14125" ph="update custo... " />
-                <marker date="1511158048623" expanded="true" signature="14836:14900" ph="insert into host... " />
-                <marker date="1511158048623" expanded="true" signature="15465:15566" ph="update host " />
-                <marker date="1511158048623" expanded="true" signature="16115:16155" ph="delete from " />
-                <marker date="1511158048623" expanded="true" signature="16823:16955" ph="update P set... " />
-                <marker date="1511158048623" expanded="true" signature="17615:17800" ph="select TP.ST... contract" />
-                <marker date="1511158048623" expanded="true" signature="18900:19078" ph="select type_... contract" />
-                <marker date="1511158048623" expanded="true" signature="19101:19275" ph="select type_... contract" />
-                <marker date="1511158048623" expanded="true" signature="19298:19389" ph="select membe... member" />
-                <marker date="1511158048623" expanded="true" signature="19412:19576" ph="select end_t... contract" />
-                <marker date="1511158048623" expanded="true" signature="20465:20545" ph="update membe... " />
-                <marker date="1511158048623" expanded="true" signature="21129:21521" ph="select t1.en... timeperiod" />
-                <marker date="1511158048623" expanded="true" signature="21337:21520" ph="select t2.re... contract" />
-                <marker date="1511158048623" expanded="true" signature="21546:22132" ph="select type_... contract" />
-                <marker date="1511158048623" expanded="true" signature="21669:22060" ph="select t1.re... timeperiod" />
-                <marker date="1511158048623" expanded="true" signature="21876:22059" ph="select t2.re... contract" />
-                <marker date="1511158048623" expanded="true" signature="22156:22738" ph="select type_... contract" />
-                <marker date="1511158048623" expanded="true" signature="22275:22666" ph="select t1.re... timeperiod" />
-                <marker date="1511158048623" expanded="true" signature="22482:22665" ph="select t2.re... contract" />
-                <marker date="1511158048623" expanded="true" signature="25255:25509" ph="select payme... payment" />
-                <marker date="1511158048623" expanded="true" signature="25985:26152" ph="select AVG(h... house" />
-                <marker date="1511158048623" expanded="true" signature="26737:26781" ph="insert into member... " />
-                <marker date="1511158048623" expanded="true" signature="27259:27306" ph="delete from " />
-                <marker date="1511158048623" expanded="true" signature="27802:28135" ph="select house... house" />
-                <marker date="1511158048623" expanded="true" signature="28860:28955" ph="insert into house... " />
-                <marker date="1511158048623" expanded="true" signature="29446:29819" ph="select house... house" />
-                <marker date="1511158048623" expanded="true" signature="30978:31056" ph="insert into reservation... " />
-                <marker date="1511158048623" expanded="true" signature="31081:31136" ph="insert into timeperiod... " />
-                <marker date="1511158048623" expanded="true" signature="31578:32010" ph="select house... house" />
-                <marker date="1511158048623" expanded="true" signature="32308:32323" ph="Drop table t... " />
-                <marker date="1511158048623" expanded="true" signature="32429:32520" ph="create table... tab1" />
-                <marker date="1511158048623" expanded="true" signature="33246:33280" ph="delete from " />
-                <marker date="1511158048623" expanded="true" signature="33834:33916" ph="update tab1 " />
-                <marker date="1511158048623" expanded="true" signature="34134:34234" ph="insert into house... " />
-                <marker date="1511158048623" expanded="true" signature="35464:35545" ph="insert into house... " />
-                <marker date="1511158048623" expanded="true" signature="36071:36090" ph="select * fro... house" />
+                <marker date="1511164374841" expanded="true" signature="12223:12344" ph="select reser... reservation" />
+                <marker date="1511164374841" expanded="true" signature="12367:12491" ph="select reser... reservation" />
+                <marker date="1511164374841" expanded="true" signature="12514:12634" ph="select reser... reservation" />
+                <marker date="1511164374841" expanded="true" signature="12658:12789" ph="select reser... reservation" />
+                <marker date="1511164374841" expanded="true" signature="13706:13898" ph="select type_... reservation" />
+                <marker date="1511164374841" expanded="true" signature="13921:14109" ph="select type_... reservation" />
+                <marker date="1511164374841" expanded="true" signature="14132:14223" ph="select membe... member" />
+                <marker date="1511164374841" expanded="true" signature="14246:14424" ph="select end_t... reservation" />
+                <marker date="1511164374841" expanded="true" signature="15116:15198" ph="insert into payment... " />
+                <marker date="1511164374841" expanded="true" signature="15223:15315" ph="insert into contract... " />
+                <marker date="1511164374841" expanded="true" signature="15340:15430" ph="update reser... " />
+                <marker date="1511164374841" expanded="true" signature="16035:16215" ph="select * fro... reservation" />
+                <marker date="1511164374841" expanded="true" signature="16689:16754" ph="select * fro... reservation" />
+                <marker date="1511164374841" expanded="true" signature="16994:17088" ph="update reser... " />
+                <marker date="1511164374841" expanded="true" signature="17489:17641" ph="select * fro... reservation" />
+                <marker date="1511164374841" expanded="true" signature="18394:18478" ph="insert into customer... " />
+                <marker date="1511164374841" expanded="true" signature="19021:19069" ph="delete from " />
+                <marker date="1511164374841" expanded="true" signature="19640:19812" ph="update custo... " />
+                <marker date="1511164374841" expanded="true" signature="20511:20575" ph="insert into host... " />
+                <marker date="1511164374841" expanded="true" signature="21174:21275" ph="update host " />
+                <marker date="1511164374841" expanded="true" signature="21857:21897" ph="delete from " />
+                <marker date="1511164374841" expanded="true" signature="22631:22763" ph="update P set... " />
+                <marker date="1511164374841" expanded="true" signature="23452:23691" ph="select contr... contract" />
+                <marker date="1511164374841" expanded="true" signature="24841:25026" ph="select TP.ST... contract" />
+                <marker date="1511164374841" expanded="true" signature="26243:26421" ph="select type_... contract" />
+                <marker date="1511164374841" expanded="true" signature="26444:26618" ph="select type_... contract" />
+                <marker date="1511164374841" expanded="true" signature="26641:26732" ph="select membe... member" />
+                <marker date="1511164374841" expanded="true" signature="26755:26919" ph="select end_t... contract" />
+                <marker date="1511164374841" expanded="true" signature="28023:28088" ph="select MEMBE... member" />
+                <marker date="1511164374841" expanded="true" signature="28412:28492" ph="update membe... " />
+                <marker date="1511164374841" expanded="true" signature="29081:30017" ph="select p123.... payment" />
+                <marker date="1511164374841" expanded="true" signature="29193:30016" ph="select c.pay... contract" />
+                <marker date="1511164374841" expanded="true" signature="29360:30015" ph="select c1.re... contract" />
+                <marker date="1511164374841" expanded="true" signature="32812:33066" ph="select payme... payment" />
+                <marker date="1511164374841" expanded="true" signature="33542:33709" ph="select AVG(h... house" />
+                <marker date="1511164374841" expanded="true" signature="34294:34338" ph="insert into member... " />
+                <marker date="1511164374841" expanded="true" signature="34816:34863" ph="delete from " />
+                <marker date="1511164374841" expanded="true" signature="35359:35692" ph="select house... house" />
+                <marker date="1511164374841" expanded="true" signature="36417:36512" ph="insert into house... " />
+                <marker date="1511164374841" expanded="true" signature="37003:37376" ph="select house... house" />
+                <marker date="1511164374841" expanded="true" signature="38535:38613" ph="insert into reservation... " />
+                <marker date="1511164374841" expanded="true" signature="38638:38693" ph="insert into timeperiod... " />
+                <marker date="1511164374841" expanded="true" signature="39135:39567" ph="select house... house" />
+                <marker date="1511164374841" expanded="true" signature="39865:39880" ph="DROP TABLE t... " />
+                <marker date="1511164374841" expanded="true" signature="39986:40077" ph="CREATE TABLE... tab1" />
+                <marker date="1511164374841" expanded="true" signature="40803:40837" ph="DELETE FROM " />
+                <marker date="1511164374841" expanded="true" signature="41391:41473" ph="UPDATE tab1 " />
+                <marker date="1511164374841" expanded="true" signature="41691:41791" ph="INSERT INTO house... " />
+                <marker date="1511164374841" expanded="true" signature="43021:43102" ph="INSERT INTO house... " />
+                <marker date="1511164374841" expanded="true" signature="43628:43647" ph="SELECT * FRO... house" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="management.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/management.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,97 +114,141 @@
       <file leaf-file-name="customer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+            <state relative-caret-position="399">
+              <caret line="381" column="21" lean-forward="false" selection-start-line="381" selection-start-column="21" selection-end-line="381" selection-end-column="21" />
               <folding>
-                <marker date="1511158068214" expanded="true" signature="11117:11201" ph="insert into customer... " />
-                <marker date="1511158068214" expanded="true" signature="11747:11795" ph="delete from " />
-                <marker date="1511158068214" expanded="true" signature="12366:12538" ph="update custo... " />
-                <marker date="1511158068214" expanded="true" signature="13237:13301" ph="insert into host... " />
-                <marker date="1511158068214" expanded="true" signature="13900:14001" ph="update host " />
-                <marker date="1511158068214" expanded="true" signature="14583:14623" ph="delete from " />
-                <marker date="1511158068214" expanded="true" signature="15357:15489" ph="update P set... " />
-                <marker date="1511158068214" expanded="true" signature="16149:16334" ph="select TP.ST... contract" />
-                <marker date="1511158068214" expanded="true" signature="17434:17612" ph="select type_... contract" />
-                <marker date="1511158068214" expanded="true" signature="17635:17809" ph="select type_... contract" />
-                <marker date="1511158068214" expanded="true" signature="17832:17923" ph="select membe... member" />
-                <marker date="1511158068214" expanded="true" signature="17946:18110" ph="select end_t... contract" />
-                <marker date="1511158068214" expanded="true" signature="18999:19079" ph="update membe... " />
-                <marker date="1511158068214" expanded="true" signature="19663:20055" ph="select t1.en... timeperiod" />
-                <marker date="1511158068214" expanded="true" signature="19871:20054" ph="select t2.re... contract" />
-                <marker date="1511158068214" expanded="true" signature="20080:20666" ph="select type_... contract" />
-                <marker date="1511158068214" expanded="true" signature="20203:20594" ph="select t1.re... timeperiod" />
-                <marker date="1511158068214" expanded="true" signature="20410:20593" ph="select t2.re... contract" />
-                <marker date="1511158068214" expanded="true" signature="20690:21272" ph="select type_... contract" />
-                <marker date="1511158068214" expanded="true" signature="20809:21200" ph="select t1.re... timeperiod" />
-                <marker date="1511158068214" expanded="true" signature="21016:21199" ph="select t2.re... contract" />
-                <marker date="1511158068214" expanded="true" signature="23789:24043" ph="select payme... payment" />
-                <marker date="1511158068214" expanded="true" signature="24519:24686" ph="select AVG(h... house" />
-                <marker date="1511158068214" expanded="true" signature="25271:25315" ph="insert into member... " />
-                <marker date="1511158068214" expanded="true" signature="25793:25840" ph="delete from " />
-                <marker date="1511158068214" expanded="true" signature="26336:26669" ph="select house... house" />
-                <marker date="1511158068214" expanded="true" signature="27394:27489" ph="insert into house... " />
-                <marker date="1511158068214" expanded="true" signature="27980:28353" ph="select house... house" />
-                <marker date="1511158068214" expanded="true" signature="29512:29590" ph="insert into reservation... " />
-                <marker date="1511158068214" expanded="true" signature="29615:29670" ph="insert into timeperiod... " />
-                <marker date="1511158068214" expanded="true" signature="30112:30544" ph="select house... house" />
-                <marker date="1511158068214" expanded="true" signature="30842:30857" ph="Drop table t... " />
-                <marker date="1511158068214" expanded="true" signature="30963:31054" ph="create table... tab1" />
-                <marker date="1511158068214" expanded="true" signature="31780:31814" ph="delete from " />
-                <marker date="1511158068214" expanded="true" signature="32368:32450" ph="update tab1 " />
-                <marker date="1511158068214" expanded="true" signature="32668:32768" ph="insert into house... " />
-                <marker date="1511158068214" expanded="true" signature="33998:34079" ph="insert into house... " />
-                <marker date="1511158068214" expanded="true" signature="34603:34622" ph="select * fro... house" />
+                <marker date="1511164368912" expanded="true" signature="14957:15078" ph="select reser... reservation" />
+                <marker date="1511164368912" expanded="true" signature="15101:15225" ph="select reser... reservation" />
+                <marker date="1511164368912" expanded="true" signature="15248:15368" ph="select reser... reservation" />
+                <marker date="1511164368912" expanded="true" signature="15392:15523" ph="select reser... reservation" />
+                <marker date="1511164368912" expanded="true" signature="16437:16629" ph="select type_... reservation" />
+                <marker date="1511164368912" expanded="true" signature="16652:16840" ph="select type_... reservation" />
+                <marker date="1511164368912" expanded="true" signature="16863:16954" ph="select membe... member" />
+                <marker date="1511164368912" expanded="true" signature="16977:17155" ph="select end_t... reservation" />
+                <marker date="1511164368912" expanded="true" signature="17844:17926" ph="insert into payment... " />
+                <marker date="1511164368912" expanded="true" signature="17951:18043" ph="insert into contract... " />
+                <marker date="1511164368912" expanded="true" signature="18068:18158" ph="update reser... " />
+                <marker date="1511164368912" expanded="true" signature="18764:18944" ph="select * fro... reservation" />
+                <marker date="1511164368912" expanded="true" signature="19418:19483" ph="select * fro... reservation" />
+                <marker date="1511164368912" expanded="true" signature="19723:19817" ph="update reser... " />
+                <marker date="1511164368912" expanded="true" signature="20218:20370" ph="select * fro... reservation" />
+                <marker date="1511164368912" expanded="true" signature="21123:21207" ph="insert into customer... " />
+                <marker date="1511164368912" expanded="true" signature="21750:21798" ph="delete from " />
+                <marker date="1511164368912" expanded="true" signature="22370:22542" ph="update custo... " />
+                <marker date="1511164368912" expanded="true" signature="23241:23305" ph="insert into host... " />
+                <marker date="1511164368912" expanded="true" signature="23904:24005" ph="update host " />
+                <marker date="1511164368912" expanded="true" signature="24587:24627" ph="delete from " />
+                <marker date="1511164368912" expanded="true" signature="25361:25493" ph="update P set... " />
+                <marker date="1511164368912" expanded="true" signature="26182:26421" ph="select contr... contract" />
+                <marker date="1511164368912" expanded="true" signature="27572:27757" ph="select TP.ST... contract" />
+                <marker date="1511164368912" expanded="true" signature="28974:29152" ph="select type_... contract" />
+                <marker date="1511164368912" expanded="true" signature="29175:29349" ph="select type_... contract" />
+                <marker date="1511164368912" expanded="true" signature="29372:29463" ph="select membe... member" />
+                <marker date="1511164368912" expanded="true" signature="29486:29650" ph="select end_t... contract" />
+                <marker date="1511164368912" expanded="true" signature="30742:30807" ph="select MEMBE... member" />
+                <marker date="1511164368912" expanded="true" signature="31130:31210" ph="update membe... " />
+                <marker date="1511164368912" expanded="true" signature="31799:32735" ph="select p123.... payment" />
+                <marker date="1511164368912" expanded="true" signature="31911:32734" ph="select c.pay... contract" />
+                <marker date="1511164368912" expanded="true" signature="32078:32733" ph="select c1.re... contract" />
+                <marker date="1511164368912" expanded="true" signature="35518:35772" ph="select payme... payment" />
+                <marker date="1511164368912" expanded="true" signature="36248:36415" ph="select AVG(h... house" />
+                <marker date="1511164368912" expanded="true" signature="37000:37044" ph="insert into member... " />
+                <marker date="1511164368912" expanded="true" signature="37523:37570" ph="delete from " />
+                <marker date="1511164368912" expanded="true" signature="38066:38399" ph="select house... house" />
+                <marker date="1511164368912" expanded="true" signature="39125:39220" ph="insert into house... " />
+                <marker date="1511164368912" expanded="true" signature="39711:40084" ph="select house... house" />
+                <marker date="1511164368912" expanded="true" signature="41247:41325" ph="insert into reservation... " />
+                <marker date="1511164368912" expanded="true" signature="41350:41405" ph="insert into timeperiod... " />
+                <marker date="1511164368912" expanded="true" signature="41851:42283" ph="select house... house" />
+                <marker date="1511164368912" expanded="true" signature="42583:42598" ph="Drop table t... " />
+                <marker date="1511164368912" expanded="true" signature="42704:42795" ph="create table... tab1" />
+                <marker date="1511164368912" expanded="true" signature="43521:43555" ph="delete from " />
+                <marker date="1511164368912" expanded="true" signature="44111:44193" ph="update tab1 " />
+                <marker date="1511164368912" expanded="true" signature="44411:44511" ph="insert into house... " />
+                <marker date="1511164368912" expanded="true" signature="45744:45825" ph="insert into house... " />
+                <marker date="1511164368912" expanded="true" signature="46349:46368" ph="select * fro... house" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="host.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="customer.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="host.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/host.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="236" column="22" lean-forward="false" selection-start-line="236" selection-start-column="22" selection-end-line="236" selection-end-column="22" />
+            <state relative-caret-position="552">
+              <caret line="259" column="21" lean-forward="false" selection-start-line="259" selection-start-column="21" selection-end-line="259" selection-end-column="21" />
               <folding>
-                <marker date="1511158625903" expanded="true" signature="9138:9222" ph="insert into customer... " />
-                <marker date="1511158625903" expanded="true" signature="9765:9813" ph="delete from " />
-                <marker date="1511158625903" expanded="true" signature="10384:10556" ph="update custo... " />
-                <marker date="1511158625903" expanded="true" signature="11255:11319" ph="insert into host... " />
-                <marker date="1511158625903" expanded="true" signature="11918:12019" ph="update host " />
-                <marker date="1511158625903" expanded="true" signature="12601:12641" ph="delete from " />
-                <marker date="1511158625903" expanded="true" signature="13375:13507" ph="update P set... " />
-                <marker date="1511158625903" expanded="true" signature="14167:14352" ph="select TP.ST... contract" />
-                <marker date="1511158625903" expanded="true" signature="15452:15630" ph="select type_... contract" />
-                <marker date="1511158625903" expanded="true" signature="15653:15827" ph="select type_... contract" />
-                <marker date="1511158625903" expanded="true" signature="15850:15941" ph="select membe... member" />
-                <marker date="1511158625903" expanded="true" signature="15964:16128" ph="select end_t... contract" />
-                <marker date="1511158625903" expanded="true" signature="17017:17097" ph="update membe... " />
-                <marker date="1511158625903" expanded="true" signature="17681:18073" ph="select t1.en... timeperiod" />
-                <marker date="1511158625903" expanded="true" signature="17889:18072" ph="select t2.re... contract" />
-                <marker date="1511158625903" expanded="true" signature="18098:18684" ph="select type_... contract" />
-                <marker date="1511158625903" expanded="true" signature="18221:18612" ph="select t1.re... timeperiod" />
-                <marker date="1511158625903" expanded="true" signature="18428:18611" ph="select t2.re... contract" />
-                <marker date="1511158625903" expanded="true" signature="18708:19290" ph="select type_... contract" />
-                <marker date="1511158625903" expanded="true" signature="18827:19218" ph="select t1.re... timeperiod" />
-                <marker date="1511158625903" expanded="true" signature="19034:19217" ph="select t2.re... contract" />
-                <marker date="1511158625903" expanded="true" signature="21807:22061" ph="select payme... payment" />
-                <marker date="1511158625903" expanded="true" signature="22537:22704" ph="select AVG(h... house" />
-                <marker date="1511158625903" expanded="true" signature="23289:23333" ph="insert into member... " />
-                <marker date="1511158625903" expanded="true" signature="23811:23858" ph="delete from " />
-                <marker date="1511158625903" expanded="true" signature="24354:24687" ph="select house... house" />
-                <marker date="1511158625903" expanded="true" signature="25412:25507" ph="insert into house... " />
-                <marker date="1511158625903" expanded="true" signature="25998:26371" ph="select house... house" />
-                <marker date="1511158625903" expanded="true" signature="27530:27608" ph="insert into reservation... " />
-                <marker date="1511158625903" expanded="true" signature="27633:27688" ph="insert into timeperiod... " />
-                <marker date="1511158625903" expanded="true" signature="28130:28562" ph="select house... house" />
-                <marker date="1511158625903" expanded="true" signature="28860:28875" ph="Drop table t... " />
-                <marker date="1511158625903" expanded="true" signature="28981:29072" ph="create table... tab1" />
-                <marker date="1511158625903" expanded="true" signature="29798:29832" ph="delete from " />
-                <marker date="1511158625903" expanded="true" signature="30386:30468" ph="update tab1 " />
-                <marker date="1511158625903" expanded="true" signature="30686:30786" ph="insert into house... " />
-                <marker date="1511158625903" expanded="true" signature="32016:32097" ph="insert into house... " />
-                <marker date="1511158625903" expanded="true" signature="32617:32636" ph="select * fro... house" />
+                <marker date="1511164356756" expanded="true" signature="10843:10964" ph="select reser... reservation" />
+                <marker date="1511164356756" expanded="true" signature="10987:11111" ph="select reser... reservation" />
+                <marker date="1511164356756" expanded="true" signature="11134:11254" ph="select reser... reservation" />
+                <marker date="1511164356756" expanded="true" signature="11278:11409" ph="select reser... reservation" />
+                <marker date="1511164356756" expanded="true" signature="12323:12515" ph="select type_... reservation" />
+                <marker date="1511164356756" expanded="true" signature="12538:12726" ph="select type_... reservation" />
+                <marker date="1511164356756" expanded="true" signature="12749:12840" ph="select membe... member" />
+                <marker date="1511164356756" expanded="true" signature="12863:13041" ph="select end_t... reservation" />
+                <marker date="1511164356756" expanded="true" signature="13730:13812" ph="insert into payment... " />
+                <marker date="1511164356756" expanded="true" signature="13837:13929" ph="insert into contract... " />
+                <marker date="1511164356756" expanded="true" signature="13954:14044" ph="update reser... " />
+                <marker date="1511164356756" expanded="true" signature="14650:14830" ph="select * fro... reservation" />
+                <marker date="1511164356756" expanded="true" signature="15304:15369" ph="select * fro... reservation" />
+                <marker date="1511164356756" expanded="true" signature="15609:15703" ph="update reser... " />
+                <marker date="1511164356756" expanded="true" signature="16104:16256" ph="select * fro... reservation" />
+                <marker date="1511164356756" expanded="true" signature="17009:17093" ph="insert into customer... " />
+                <marker date="1511164356756" expanded="true" signature="17636:17684" ph="delete from " />
+                <marker date="1511164356756" expanded="true" signature="18256:18428" ph="update custo... " />
+                <marker date="1511164356756" expanded="true" signature="19127:19191" ph="insert into host... " />
+                <marker date="1511164356756" expanded="true" signature="19790:19891" ph="update host " />
+                <marker date="1511164356756" expanded="true" signature="20473:20513" ph="delete from " />
+                <marker date="1511164356756" expanded="true" signature="21247:21379" ph="update P set... " />
+                <marker date="1511164356756" expanded="true" signature="22068:22307" ph="select contr... contract" />
+                <marker date="1511164356756" expanded="true" signature="23458:23643" ph="select TP.ST... contract" />
+                <marker date="1511164356756" expanded="true" signature="24860:25038" ph="select type_... contract" />
+                <marker date="1511164356756" expanded="true" signature="25061:25235" ph="select type_... contract" />
+                <marker date="1511164356756" expanded="true" signature="25258:25349" ph="select membe... member" />
+                <marker date="1511164356756" expanded="true" signature="25372:25536" ph="select end_t... contract" />
+                <marker date="1511164356756" expanded="true" signature="26628:26693" ph="select MEMBE... member" />
+                <marker date="1511164356756" expanded="true" signature="27016:27096" ph="update membe... " />
+                <marker date="1511164356756" expanded="true" signature="27685:28621" ph="select p123.... payment" />
+                <marker date="1511164356756" expanded="true" signature="27797:28620" ph="select c.pay... contract" />
+                <marker date="1511164356756" expanded="true" signature="27964:28619" ph="select c1.re... contract" />
+                <marker date="1511164356756" expanded="true" signature="31404:31658" ph="select payme... payment" />
+                <marker date="1511164356756" expanded="true" signature="32134:32301" ph="select AVG(h... house" />
+                <marker date="1511164356756" expanded="true" signature="32886:32930" ph="insert into member... " />
+                <marker date="1511164356756" expanded="true" signature="33409:33456" ph="delete from " />
+                <marker date="1511164356756" expanded="true" signature="33952:34285" ph="select house... house" />
+                <marker date="1511164356756" expanded="true" signature="35011:35106" ph="insert into house... " />
+                <marker date="1511164356756" expanded="true" signature="35597:35970" ph="select house... house" />
+                <marker date="1511164356756" expanded="true" signature="37133:37211" ph="insert into reservation... " />
+                <marker date="1511164356756" expanded="true" signature="37236:37291" ph="insert into timeperiod... " />
+                <marker date="1511164356756" expanded="true" signature="37737:38169" ph="select house... house" />
+                <marker date="1511164356756" expanded="true" signature="38469:38484" ph="Drop table t... " />
+                <marker date="1511164356756" expanded="true" signature="38590:38681" ph="create table... tab1" />
+                <marker date="1511164356756" expanded="true" signature="39407:39441" ph="delete from " />
+                <marker date="1511164356756" expanded="true" signature="39997:40079" ph="update tab1 " />
+                <marker date="1511164356756" expanded="true" signature="40297:40397" ph="insert into house... " />
+                <marker date="1511164356756" expanded="true" signature="41630:41711" ph="insert into house... " />
+                <marker date="1511164356756" expanded="true" signature="42231:42250" ph="select * fro... house" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="host.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/host.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,7 +256,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
+            <state relative-caret-position="679">
               <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
               <folding />
             </state>
@@ -223,17 +293,22 @@
       <find>deliverable-4</find>
       <find>select</find>
       <find>`</find>
-      <find>cs304_project</find>
       <find>got</find>
       <find>got data</find>
       <find>searchhousesubmit</find>
       <find>printhouses</find>
       <find>new</find>
       <find>findhouse</find>
+      <find>got data from tables</find>
+      <find>cs304_pro</find>
+      <find>cs304_project</find>
+      <find>these are your houses</find>
+      <find>printaccep</find>
+      <find>printaccepted</find>
     </findStrings>
     <replaceStrings>
-      <replace>host</replace>
       <replace>customer</replace>
+      <replace>host</replace>
       <replace>management</replace>
     </replaceStrings>
   </component>
@@ -249,9 +324,12 @@
         <option value="$PROJECT_DIR$/yuntian.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/management.php" />
-        <option value="$PROJECT_DIR$/customer.php" />
+        <option value="$PROJECT_DIR$/management.css" />
+        <option value="$PROJECT_DIR$/customer.css" />
+        <option value="$PROJECT_DIR$/host.css" />
         <option value="$PROJECT_DIR$/host.php" />
+        <option value="$PROJECT_DIR$/customer.php" />
+        <option value="$PROJECT_DIR$/management.php" />
       </list>
     </option>
   </component>
@@ -262,9 +340,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="907" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="94" />
+    <option name="height" value="976" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -332,15 +411,15 @@
       <option name="presentableId" value="Default" />
       <updated>1510962092974</updated>
       <workItem from="1510962096294" duration="8064000" />
-      <workItem from="1511059657145" duration="21202000" />
+      <workItem from="1511059657145" duration="25034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29266000" />
+    <option name="totallyTimeSpent" value="33098000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="932" height="1050" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="976" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -351,8 +430,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19760479" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27059773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2869353" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27045178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.4964824" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -506,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/7c733f0a/f0beb634-1e05-424c-a06c-2bd253b78b97/ORA_F4L0B.CUSTOMER">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/7c733f0a/f0beb634-1e05-424c-a06c-2bd253b78b97/ORA_F4L0B.HOUSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -530,149 +602,216 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
+        <state relative-caret-position="679">
           <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/management.php">
+    <entry file="file://$PROJECT_DIR$/management.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="795">
+          <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7c733f0a/f0beb634-1e05-424c-a06c-2bd253b78b97/ORA_F4L0B.CUSTOMER">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="259" column="21" lean-forward="false" selection-start-line="259" selection-start-column="21" selection-end-line="259" selection-end-column="21" />
           <folding>
-            <marker date="1511158048623" expanded="true" signature="12676:12760" ph="insert into customer... " />
-            <marker date="1511158048623" expanded="true" signature="13315:13363" ph="delete from " />
-            <marker date="1511158048623" expanded="true" signature="13953:14125" ph="update custo... " />
-            <marker date="1511158048623" expanded="true" signature="14836:14900" ph="insert into host... " />
-            <marker date="1511158048623" expanded="true" signature="15465:15566" ph="update host " />
-            <marker date="1511158048623" expanded="true" signature="16115:16155" ph="delete from " />
-            <marker date="1511158048623" expanded="true" signature="16823:16955" ph="update P set... " />
-            <marker date="1511158048623" expanded="true" signature="17615:17800" ph="select TP.ST... contract" />
-            <marker date="1511158048623" expanded="true" signature="18900:19078" ph="select type_... contract" />
-            <marker date="1511158048623" expanded="true" signature="19101:19275" ph="select type_... contract" />
-            <marker date="1511158048623" expanded="true" signature="19298:19389" ph="select membe... member" />
-            <marker date="1511158048623" expanded="true" signature="19412:19576" ph="select end_t... contract" />
-            <marker date="1511158048623" expanded="true" signature="20465:20545" ph="update membe... " />
-            <marker date="1511158048623" expanded="true" signature="21129:21521" ph="select t1.en... timeperiod" />
-            <marker date="1511158048623" expanded="true" signature="21337:21520" ph="select t2.re... contract" />
-            <marker date="1511158048623" expanded="true" signature="21546:22132" ph="select type_... contract" />
-            <marker date="1511158048623" expanded="true" signature="21669:22060" ph="select t1.re... timeperiod" />
-            <marker date="1511158048623" expanded="true" signature="21876:22059" ph="select t2.re... contract" />
-            <marker date="1511158048623" expanded="true" signature="22156:22738" ph="select type_... contract" />
-            <marker date="1511158048623" expanded="true" signature="22275:22666" ph="select t1.re... timeperiod" />
-            <marker date="1511158048623" expanded="true" signature="22482:22665" ph="select t2.re... contract" />
-            <marker date="1511158048623" expanded="true" signature="25255:25509" ph="select payme... payment" />
-            <marker date="1511158048623" expanded="true" signature="25985:26152" ph="select AVG(h... house" />
-            <marker date="1511158048623" expanded="true" signature="26737:26781" ph="insert into member... " />
-            <marker date="1511158048623" expanded="true" signature="27259:27306" ph="delete from " />
-            <marker date="1511158048623" expanded="true" signature="27802:28135" ph="select house... house" />
-            <marker date="1511158048623" expanded="true" signature="28860:28955" ph="insert into house... " />
-            <marker date="1511158048623" expanded="true" signature="29446:29819" ph="select house... house" />
-            <marker date="1511158048623" expanded="true" signature="30978:31056" ph="insert into reservation... " />
-            <marker date="1511158048623" expanded="true" signature="31081:31136" ph="insert into timeperiod... " />
-            <marker date="1511158048623" expanded="true" signature="31578:32010" ph="select house... house" />
-            <marker date="1511158048623" expanded="true" signature="32308:32323" ph="Drop table t... " />
-            <marker date="1511158048623" expanded="true" signature="32429:32520" ph="create table... tab1" />
-            <marker date="1511158048623" expanded="true" signature="33246:33280" ph="delete from " />
-            <marker date="1511158048623" expanded="true" signature="33834:33916" ph="update tab1 " />
-            <marker date="1511158048623" expanded="true" signature="34134:34234" ph="insert into house... " />
-            <marker date="1511158048623" expanded="true" signature="35464:35545" ph="insert into house... " />
-            <marker date="1511158048623" expanded="true" signature="36071:36090" ph="select * fro... house" />
+            <marker date="1511164356756" expanded="true" signature="10843:10964" ph="select reser... reservation" />
+            <marker date="1511164356756" expanded="true" signature="10987:11111" ph="select reser... reservation" />
+            <marker date="1511164356756" expanded="true" signature="11134:11254" ph="select reser... reservation" />
+            <marker date="1511164356756" expanded="true" signature="11278:11409" ph="select reser... reservation" />
+            <marker date="1511164356756" expanded="true" signature="12323:12515" ph="select type_... reservation" />
+            <marker date="1511164356756" expanded="true" signature="12538:12726" ph="select type_... reservation" />
+            <marker date="1511164356756" expanded="true" signature="12749:12840" ph="select membe... member" />
+            <marker date="1511164356756" expanded="true" signature="12863:13041" ph="select end_t... reservation" />
+            <marker date="1511164356756" expanded="true" signature="13730:13812" ph="insert into payment... " />
+            <marker date="1511164356756" expanded="true" signature="13837:13929" ph="insert into contract... " />
+            <marker date="1511164356756" expanded="true" signature="13954:14044" ph="update reser... " />
+            <marker date="1511164356756" expanded="true" signature="14650:14830" ph="select * fro... reservation" />
+            <marker date="1511164356756" expanded="true" signature="15304:15369" ph="select * fro... reservation" />
+            <marker date="1511164356756" expanded="true" signature="15609:15703" ph="update reser... " />
+            <marker date="1511164356756" expanded="true" signature="16104:16256" ph="select * fro... reservation" />
+            <marker date="1511164356756" expanded="true" signature="17009:17093" ph="insert into customer... " />
+            <marker date="1511164356756" expanded="true" signature="17636:17684" ph="delete from " />
+            <marker date="1511164356756" expanded="true" signature="18256:18428" ph="update custo... " />
+            <marker date="1511164356756" expanded="true" signature="19127:19191" ph="insert into host... " />
+            <marker date="1511164356756" expanded="true" signature="19790:19891" ph="update host " />
+            <marker date="1511164356756" expanded="true" signature="20473:20513" ph="delete from " />
+            <marker date="1511164356756" expanded="true" signature="21247:21379" ph="update P set... " />
+            <marker date="1511164356756" expanded="true" signature="22068:22307" ph="select contr... contract" />
+            <marker date="1511164356756" expanded="true" signature="23458:23643" ph="select TP.ST... contract" />
+            <marker date="1511164356756" expanded="true" signature="24860:25038" ph="select type_... contract" />
+            <marker date="1511164356756" expanded="true" signature="25061:25235" ph="select type_... contract" />
+            <marker date="1511164356756" expanded="true" signature="25258:25349" ph="select membe... member" />
+            <marker date="1511164356756" expanded="true" signature="25372:25536" ph="select end_t... contract" />
+            <marker date="1511164356756" expanded="true" signature="26628:26693" ph="select MEMBE... member" />
+            <marker date="1511164356756" expanded="true" signature="27016:27096" ph="update membe... " />
+            <marker date="1511164356756" expanded="true" signature="27685:28621" ph="select p123.... payment" />
+            <marker date="1511164356756" expanded="true" signature="27797:28620" ph="select c.pay... contract" />
+            <marker date="1511164356756" expanded="true" signature="27964:28619" ph="select c1.re... contract" />
+            <marker date="1511164356756" expanded="true" signature="31404:31658" ph="select payme... payment" />
+            <marker date="1511164356756" expanded="true" signature="32134:32301" ph="select AVG(h... house" />
+            <marker date="1511164356756" expanded="true" signature="32886:32930" ph="insert into member... " />
+            <marker date="1511164356756" expanded="true" signature="33409:33456" ph="delete from " />
+            <marker date="1511164356756" expanded="true" signature="33952:34285" ph="select house... house" />
+            <marker date="1511164356756" expanded="true" signature="35011:35106" ph="insert into house... " />
+            <marker date="1511164356756" expanded="true" signature="35597:35970" ph="select house... house" />
+            <marker date="1511164356756" expanded="true" signature="37133:37211" ph="insert into reservation... " />
+            <marker date="1511164356756" expanded="true" signature="37236:37291" ph="insert into timeperiod... " />
+            <marker date="1511164356756" expanded="true" signature="37737:38169" ph="select house... house" />
+            <marker date="1511164356756" expanded="true" signature="38469:38484" ph="Drop table t... " />
+            <marker date="1511164356756" expanded="true" signature="38590:38681" ph="create table... tab1" />
+            <marker date="1511164356756" expanded="true" signature="39407:39441" ph="delete from " />
+            <marker date="1511164356756" expanded="true" signature="39997:40079" ph="update tab1 " />
+            <marker date="1511164356756" expanded="true" signature="40297:40397" ph="insert into house... " />
+            <marker date="1511164356756" expanded="true" signature="41630:41711" ph="insert into house... " />
+            <marker date="1511164356756" expanded="true" signature="42231:42250" ph="select * fro... house" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+        <state relative-caret-position="399">
+          <caret line="381" column="21" lean-forward="false" selection-start-line="381" selection-start-column="21" selection-end-line="381" selection-end-column="21" />
           <folding>
-            <marker date="1511158068214" expanded="true" signature="11117:11201" ph="insert into customer... " />
-            <marker date="1511158068214" expanded="true" signature="11747:11795" ph="delete from " />
-            <marker date="1511158068214" expanded="true" signature="12366:12538" ph="update custo... " />
-            <marker date="1511158068214" expanded="true" signature="13237:13301" ph="insert into host... " />
-            <marker date="1511158068214" expanded="true" signature="13900:14001" ph="update host " />
-            <marker date="1511158068214" expanded="true" signature="14583:14623" ph="delete from " />
-            <marker date="1511158068214" expanded="true" signature="15357:15489" ph="update P set... " />
-            <marker date="1511158068214" expanded="true" signature="16149:16334" ph="select TP.ST... contract" />
-            <marker date="1511158068214" expanded="true" signature="17434:17612" ph="select type_... contract" />
-            <marker date="1511158068214" expanded="true" signature="17635:17809" ph="select type_... contract" />
-            <marker date="1511158068214" expanded="true" signature="17832:17923" ph="select membe... member" />
-            <marker date="1511158068214" expanded="true" signature="17946:18110" ph="select end_t... contract" />
-            <marker date="1511158068214" expanded="true" signature="18999:19079" ph="update membe... " />
-            <marker date="1511158068214" expanded="true" signature="19663:20055" ph="select t1.en... timeperiod" />
-            <marker date="1511158068214" expanded="true" signature="19871:20054" ph="select t2.re... contract" />
-            <marker date="1511158068214" expanded="true" signature="20080:20666" ph="select type_... contract" />
-            <marker date="1511158068214" expanded="true" signature="20203:20594" ph="select t1.re... timeperiod" />
-            <marker date="1511158068214" expanded="true" signature="20410:20593" ph="select t2.re... contract" />
-            <marker date="1511158068214" expanded="true" signature="20690:21272" ph="select type_... contract" />
-            <marker date="1511158068214" expanded="true" signature="20809:21200" ph="select t1.re... timeperiod" />
-            <marker date="1511158068214" expanded="true" signature="21016:21199" ph="select t2.re... contract" />
-            <marker date="1511158068214" expanded="true" signature="23789:24043" ph="select payme... payment" />
-            <marker date="1511158068214" expanded="true" signature="24519:24686" ph="select AVG(h... house" />
-            <marker date="1511158068214" expanded="true" signature="25271:25315" ph="insert into member... " />
-            <marker date="1511158068214" expanded="true" signature="25793:25840" ph="delete from " />
-            <marker date="1511158068214" expanded="true" signature="26336:26669" ph="select house... house" />
-            <marker date="1511158068214" expanded="true" signature="27394:27489" ph="insert into house... " />
-            <marker date="1511158068214" expanded="true" signature="27980:28353" ph="select house... house" />
-            <marker date="1511158068214" expanded="true" signature="29512:29590" ph="insert into reservation... " />
-            <marker date="1511158068214" expanded="true" signature="29615:29670" ph="insert into timeperiod... " />
-            <marker date="1511158068214" expanded="true" signature="30112:30544" ph="select house... house" />
-            <marker date="1511158068214" expanded="true" signature="30842:30857" ph="Drop table t... " />
-            <marker date="1511158068214" expanded="true" signature="30963:31054" ph="create table... tab1" />
-            <marker date="1511158068214" expanded="true" signature="31780:31814" ph="delete from " />
-            <marker date="1511158068214" expanded="true" signature="32368:32450" ph="update tab1 " />
-            <marker date="1511158068214" expanded="true" signature="32668:32768" ph="insert into house... " />
-            <marker date="1511158068214" expanded="true" signature="33998:34079" ph="insert into house... " />
-            <marker date="1511158068214" expanded="true" signature="34603:34622" ph="select * fro... house" />
+            <marker date="1511164368912" expanded="true" signature="14957:15078" ph="select reser... reservation" />
+            <marker date="1511164368912" expanded="true" signature="15101:15225" ph="select reser... reservation" />
+            <marker date="1511164368912" expanded="true" signature="15248:15368" ph="select reser... reservation" />
+            <marker date="1511164368912" expanded="true" signature="15392:15523" ph="select reser... reservation" />
+            <marker date="1511164368912" expanded="true" signature="16437:16629" ph="select type_... reservation" />
+            <marker date="1511164368912" expanded="true" signature="16652:16840" ph="select type_... reservation" />
+            <marker date="1511164368912" expanded="true" signature="16863:16954" ph="select membe... member" />
+            <marker date="1511164368912" expanded="true" signature="16977:17155" ph="select end_t... reservation" />
+            <marker date="1511164368912" expanded="true" signature="17844:17926" ph="insert into payment... " />
+            <marker date="1511164368912" expanded="true" signature="17951:18043" ph="insert into contract... " />
+            <marker date="1511164368912" expanded="true" signature="18068:18158" ph="update reser... " />
+            <marker date="1511164368912" expanded="true" signature="18764:18944" ph="select * fro... reservation" />
+            <marker date="1511164368912" expanded="true" signature="19418:19483" ph="select * fro... reservation" />
+            <marker date="1511164368912" expanded="true" signature="19723:19817" ph="update reser... " />
+            <marker date="1511164368912" expanded="true" signature="20218:20370" ph="select * fro... reservation" />
+            <marker date="1511164368912" expanded="true" signature="21123:21207" ph="insert into customer... " />
+            <marker date="1511164368912" expanded="true" signature="21750:21798" ph="delete from " />
+            <marker date="1511164368912" expanded="true" signature="22370:22542" ph="update custo... " />
+            <marker date="1511164368912" expanded="true" signature="23241:23305" ph="insert into host... " />
+            <marker date="1511164368912" expanded="true" signature="23904:24005" ph="update host " />
+            <marker date="1511164368912" expanded="true" signature="24587:24627" ph="delete from " />
+            <marker date="1511164368912" expanded="true" signature="25361:25493" ph="update P set... " />
+            <marker date="1511164368912" expanded="true" signature="26182:26421" ph="select contr... contract" />
+            <marker date="1511164368912" expanded="true" signature="27572:27757" ph="select TP.ST... contract" />
+            <marker date="1511164368912" expanded="true" signature="28974:29152" ph="select type_... contract" />
+            <marker date="1511164368912" expanded="true" signature="29175:29349" ph="select type_... contract" />
+            <marker date="1511164368912" expanded="true" signature="29372:29463" ph="select membe... member" />
+            <marker date="1511164368912" expanded="true" signature="29486:29650" ph="select end_t... contract" />
+            <marker date="1511164368912" expanded="true" signature="30742:30807" ph="select MEMBE... member" />
+            <marker date="1511164368912" expanded="true" signature="31130:31210" ph="update membe... " />
+            <marker date="1511164368912" expanded="true" signature="31799:32735" ph="select p123.... payment" />
+            <marker date="1511164368912" expanded="true" signature="31911:32734" ph="select c.pay... contract" />
+            <marker date="1511164368912" expanded="true" signature="32078:32733" ph="select c1.re... contract" />
+            <marker date="1511164368912" expanded="true" signature="35518:35772" ph="select payme... payment" />
+            <marker date="1511164368912" expanded="true" signature="36248:36415" ph="select AVG(h... house" />
+            <marker date="1511164368912" expanded="true" signature="37000:37044" ph="insert into member... " />
+            <marker date="1511164368912" expanded="true" signature="37523:37570" ph="delete from " />
+            <marker date="1511164368912" expanded="true" signature="38066:38399" ph="select house... house" />
+            <marker date="1511164368912" expanded="true" signature="39125:39220" ph="insert into house... " />
+            <marker date="1511164368912" expanded="true" signature="39711:40084" ph="select house... house" />
+            <marker date="1511164368912" expanded="true" signature="41247:41325" ph="insert into reservation... " />
+            <marker date="1511164368912" expanded="true" signature="41350:41405" ph="insert into timeperiod... " />
+            <marker date="1511164368912" expanded="true" signature="41851:42283" ph="select house... house" />
+            <marker date="1511164368912" expanded="true" signature="42583:42598" ph="Drop table t... " />
+            <marker date="1511164368912" expanded="true" signature="42704:42795" ph="create table... tab1" />
+            <marker date="1511164368912" expanded="true" signature="43521:43555" ph="delete from " />
+            <marker date="1511164368912" expanded="true" signature="44111:44193" ph="update tab1 " />
+            <marker date="1511164368912" expanded="true" signature="44411:44511" ph="insert into house... " />
+            <marker date="1511164368912" expanded="true" signature="45744:45825" ph="insert into house... " />
+            <marker date="1511164368912" expanded="true" signature="46349:46368" ph="select * fro... house" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host.php">
+    <entry file="file://$PROJECT_DIR$/management.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="236" column="22" lean-forward="false" selection-start-line="236" selection-start-column="22" selection-end-line="236" selection-end-column="22" />
+        <state relative-caret-position="467">
+          <caret line="321" column="21" lean-forward="false" selection-start-line="321" selection-start-column="21" selection-end-line="321" selection-end-column="21" />
           <folding>
-            <marker date="1511158625903" expanded="true" signature="9138:9222" ph="insert into customer... " />
-            <marker date="1511158625903" expanded="true" signature="9765:9813" ph="delete from " />
-            <marker date="1511158625903" expanded="true" signature="10384:10556" ph="update custo... " />
-            <marker date="1511158625903" expanded="true" signature="11255:11319" ph="insert into host... " />
-            <marker date="1511158625903" expanded="true" signature="11918:12019" ph="update host " />
-            <marker date="1511158625903" expanded="true" signature="12601:12641" ph="delete from " />
-            <marker date="1511158625903" expanded="true" signature="13375:13507" ph="update P set... " />
-            <marker date="1511158625903" expanded="true" signature="14167:14352" ph="select TP.ST... contract" />
-            <marker date="1511158625903" expanded="true" signature="15452:15630" ph="select type_... contract" />
-            <marker date="1511158625903" expanded="true" signature="15653:15827" ph="select type_... contract" />
-            <marker date="1511158625903" expanded="true" signature="15850:15941" ph="select membe... member" />
-            <marker date="1511158625903" expanded="true" signature="15964:16128" ph="select end_t... contract" />
-            <marker date="1511158625903" expanded="true" signature="17017:17097" ph="update membe... " />
-            <marker date="1511158625903" expanded="true" signature="17681:18073" ph="select t1.en... timeperiod" />
-            <marker date="1511158625903" expanded="true" signature="17889:18072" ph="select t2.re... contract" />
-            <marker date="1511158625903" expanded="true" signature="18098:18684" ph="select type_... contract" />
-            <marker date="1511158625903" expanded="true" signature="18221:18612" ph="select t1.re... timeperiod" />
-            <marker date="1511158625903" expanded="true" signature="18428:18611" ph="select t2.re... contract" />
-            <marker date="1511158625903" expanded="true" signature="18708:19290" ph="select type_... contract" />
-            <marker date="1511158625903" expanded="true" signature="18827:19218" ph="select t1.re... timeperiod" />
-            <marker date="1511158625903" expanded="true" signature="19034:19217" ph="select t2.re... contract" />
-            <marker date="1511158625903" expanded="true" signature="21807:22061" ph="select payme... payment" />
-            <marker date="1511158625903" expanded="true" signature="22537:22704" ph="select AVG(h... house" />
-            <marker date="1511158625903" expanded="true" signature="23289:23333" ph="insert into member... " />
-            <marker date="1511158625903" expanded="true" signature="23811:23858" ph="delete from " />
-            <marker date="1511158625903" expanded="true" signature="24354:24687" ph="select house... house" />
-            <marker date="1511158625903" expanded="true" signature="25412:25507" ph="insert into house... " />
-            <marker date="1511158625903" expanded="true" signature="25998:26371" ph="select house... house" />
-            <marker date="1511158625903" expanded="true" signature="27530:27608" ph="insert into reservation... " />
-            <marker date="1511158625903" expanded="true" signature="27633:27688" ph="insert into timeperiod... " />
-            <marker date="1511158625903" expanded="true" signature="28130:28562" ph="select house... house" />
-            <marker date="1511158625903" expanded="true" signature="28860:28875" ph="Drop table t... " />
-            <marker date="1511158625903" expanded="true" signature="28981:29072" ph="create table... tab1" />
-            <marker date="1511158625903" expanded="true" signature="29798:29832" ph="delete from " />
-            <marker date="1511158625903" expanded="true" signature="30386:30468" ph="update tab1 " />
-            <marker date="1511158625903" expanded="true" signature="30686:30786" ph="insert into house... " />
-            <marker date="1511158625903" expanded="true" signature="32016:32097" ph="insert into house... " />
-            <marker date="1511158625903" expanded="true" signature="32617:32636" ph="select * fro... house" />
+            <marker date="1511164374841" expanded="true" signature="12223:12344" ph="select reser... reservation" />
+            <marker date="1511164374841" expanded="true" signature="12367:12491" ph="select reser... reservation" />
+            <marker date="1511164374841" expanded="true" signature="12514:12634" ph="select reser... reservation" />
+            <marker date="1511164374841" expanded="true" signature="12658:12789" ph="select reser... reservation" />
+            <marker date="1511164374841" expanded="true" signature="13706:13898" ph="select type_... reservation" />
+            <marker date="1511164374841" expanded="true" signature="13921:14109" ph="select type_... reservation" />
+            <marker date="1511164374841" expanded="true" signature="14132:14223" ph="select membe... member" />
+            <marker date="1511164374841" expanded="true" signature="14246:14424" ph="select end_t... reservation" />
+            <marker date="1511164374841" expanded="true" signature="15116:15198" ph="insert into payment... " />
+            <marker date="1511164374841" expanded="true" signature="15223:15315" ph="insert into contract... " />
+            <marker date="1511164374841" expanded="true" signature="15340:15430" ph="update reser... " />
+            <marker date="1511164374841" expanded="true" signature="16035:16215" ph="select * fro... reservation" />
+            <marker date="1511164374841" expanded="true" signature="16689:16754" ph="select * fro... reservation" />
+            <marker date="1511164374841" expanded="true" signature="16994:17088" ph="update reser... " />
+            <marker date="1511164374841" expanded="true" signature="17489:17641" ph="select * fro... reservation" />
+            <marker date="1511164374841" expanded="true" signature="18394:18478" ph="insert into customer... " />
+            <marker date="1511164374841" expanded="true" signature="19021:19069" ph="delete from " />
+            <marker date="1511164374841" expanded="true" signature="19640:19812" ph="update custo... " />
+            <marker date="1511164374841" expanded="true" signature="20511:20575" ph="insert into host... " />
+            <marker date="1511164374841" expanded="true" signature="21174:21275" ph="update host " />
+            <marker date="1511164374841" expanded="true" signature="21857:21897" ph="delete from " />
+            <marker date="1511164374841" expanded="true" signature="22631:22763" ph="update P set... " />
+            <marker date="1511164374841" expanded="true" signature="23452:23691" ph="select contr... contract" />
+            <marker date="1511164374841" expanded="true" signature="24841:25026" ph="select TP.ST... contract" />
+            <marker date="1511164374841" expanded="true" signature="26243:26421" ph="select type_... contract" />
+            <marker date="1511164374841" expanded="true" signature="26444:26618" ph="select type_... contract" />
+            <marker date="1511164374841" expanded="true" signature="26641:26732" ph="select membe... member" />
+            <marker date="1511164374841" expanded="true" signature="26755:26919" ph="select end_t... contract" />
+            <marker date="1511164374841" expanded="true" signature="28023:28088" ph="select MEMBE... member" />
+            <marker date="1511164374841" expanded="true" signature="28412:28492" ph="update membe... " />
+            <marker date="1511164374841" expanded="true" signature="29081:30017" ph="select p123.... payment" />
+            <marker date="1511164374841" expanded="true" signature="29193:30016" ph="select c.pay... contract" />
+            <marker date="1511164374841" expanded="true" signature="29360:30015" ph="select c1.re... contract" />
+            <marker date="1511164374841" expanded="true" signature="32812:33066" ph="select payme... payment" />
+            <marker date="1511164374841" expanded="true" signature="33542:33709" ph="select AVG(h... house" />
+            <marker date="1511164374841" expanded="true" signature="34294:34338" ph="insert into member... " />
+            <marker date="1511164374841" expanded="true" signature="34816:34863" ph="delete from " />
+            <marker date="1511164374841" expanded="true" signature="35359:35692" ph="select house... house" />
+            <marker date="1511164374841" expanded="true" signature="36417:36512" ph="insert into house... " />
+            <marker date="1511164374841" expanded="true" signature="37003:37376" ph="select house... house" />
+            <marker date="1511164374841" expanded="true" signature="38535:38613" ph="insert into reservation... " />
+            <marker date="1511164374841" expanded="true" signature="38638:38693" ph="insert into timeperiod... " />
+            <marker date="1511164374841" expanded="true" signature="39135:39567" ph="select house... house" />
+            <marker date="1511164374841" expanded="true" signature="39865:39880" ph="DROP TABLE t... " />
+            <marker date="1511164374841" expanded="true" signature="39986:40077" ph="CREATE TABLE... tab1" />
+            <marker date="1511164374841" expanded="true" signature="40803:40837" ph="DELETE FROM " />
+            <marker date="1511164374841" expanded="true" signature="41391:41473" ph="UPDATE tab1 " />
+            <marker date="1511164374841" expanded="true" signature="41691:41791" ph="INSERT INTO house... " />
+            <marker date="1511164374841" expanded="true" signature="43021:43102" ph="INSERT INTO house... " />
+            <marker date="1511164374841" expanded="true" signature="43628:43647" ph="SELECT * FRO... house" />
           </folding>
         </state>
       </provider>
