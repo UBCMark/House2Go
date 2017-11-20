@@ -14,7 +14,9 @@
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header"><a href="index.html" class="navbar-brand"><i class="glyphicon glyphicon-phone"></i>House2Go</a>
-            <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggle collapsed"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav navbar-right">
@@ -27,164 +29,151 @@
 </nav>
 
 
-<h1>Management</h1>
+<h1>Management View</h1>
 
-<div class="management">
+<div class="managementView">
 
-        <div class="add-cus">
-            <label>Add Customer</label>
+    <div class="add-cus">
+        <label>Add Customer</label>
 
-            <form method="POST" action="management.php">
-                <p><input type="text" name="cid" placeholder="Customer ID">
-                    <input type="text" name="cnam" placeholder="Name">
-                    <input type="text" name="cem" placeholder="Email">
-                    <input type="text" name="cph" placeholder="Phone">
-                    <input type="text" name="crat" placeholder="Rating">
-                    <input type="text" name="cadd" placeholder="Address"></p>
-
-
-                <p><input type="submit" value="Insert!" name="insertsubmit"></p>
-
-        </div>
-        </form>
-
-        <div class="update-cus">
-            <label>Update Customer</label>
-
-            <form method="post" action="management.php">
-                <!-- refresh page -->
-                <input type="text" name="cid" placeholder="Customer ID">
+        <form method="POST" action="management.php">
+            <p><input type="text" name="cid" placeholder="Customer ID">
                 <input type="text" name="cnam" placeholder="Name">
                 <input type="text" name="cem" placeholder="Email">
                 <input type="text" name="cph" placeholder="Phone">
                 <input type="text" name="crat" placeholder="Rating">
-                <input type="text" name="cadd" placeholder="Address">
-                <!--<input type="text" name="cfee" placeholder="Fee">-->
-                <!--<input type="text" name="crp" placeholder="Reward Points">-->
-
-                <p><input type="submit" value = "Update" name="updatesubmit"></p>
-        </div>
-        </form>
-
-        <div class="remove-cus">
-            <label>Remove Customer</label>
-
-            <form method="post" action="management.php">
-                <!-- refresh page -->
-                <input type="text" name="cid" placeholder="Customer ID">
-
-                <p><input type="submit" value = "Remove" name="removesubmit"></p>
-        </div>
-        </form>
+                <input type="text" name="cadd" placeholder="Address"></p>
 
 
-        <div class="add-host">
-            <label>Add Host</label>
+            <p><input type="submit" value="Insert!" name="insertsubmit"></p>
 
-            <form method="post" action="management.php">
-                <!-- refresh page -->
-                <input type="text" name="hid" placeholder="Host ID">
-                <input type="text" name="hnam" placeholder="Name">
-                <input type="text" name="hph" placeholder="Phone">
-                <input type="text" name="hadd" placeholder="Address">
+    </div>
+    </form>
+
+    <div class="update-cus">
+        <label>Update Customer</label>
+
+        <form method="post" action="management.php">
+            <!-- refresh page -->
+            <input type="text" name="cid" placeholder="Customer ID">
+            <input type="text" name="cnam" placeholder="Name">
+            <input type="text" name="cem" placeholder="Email">
+            <input type="text" name="cph" placeholder="Phone">
+            <input type="text" name="crat" placeholder="Rating">
+            <input type="text" name="cadd" placeholder="Address">
+            <!--<input type="text" name="cfee" placeholder="Fee">-->
+            <!--<input type="text" name="crp" placeholder="Reward Points">-->
+
+            <p><input type="submit" value="Update" name="updatesubmit"></p>
+    </div>
+    </form>
+
+    <div class="remove-cus">
+        <label>Remove Customer</label>
+
+        <form method="post" action="management.php">
+            <!-- refresh page -->
+            <input type="text" name="cid" placeholder="Customer ID">
+
+            <p><input type="submit" value="Remove" name="removesubmit"></p>
+    </div>
+    </form>
 
 
-                <p><input type="submit" value = "Insert" name="inserthostsubmit"></p>
-        </div>
-        </form>
-
-        <div class="update-host">
-            <label>Update Host</label>
-
-            <form method="post" action="management.php">
-                <!-- refresh page -->
-                <input type="text" name="hid" placeholder="Host ID">
-                <input type="text" name="hnam" placeholder="Name">
-                <input type="text" name="hph" placeholder="Phone">
-                <input type="text" name="hadd" placeholder="Address">
-
-                <p><input type="submit" value = "Update" name="updatehostsubmit"></p>
-        </div>
-        </form>
-
-        <div class="remove-host"
-        <label>Remove Host</label>
+    <div class="add-host">
+        <label>Add Host</label>
 
         <form method="post" action="management.php">
             <!-- refresh page -->
             <input type="text" name="hid" placeholder="Host ID">
+            <input type="text" name="hnam" placeholder="Name">
+            <input type="text" name="hph" placeholder="Phone">
+            <input type="text" name="hadd" placeholder="Address">
 
-            <p><input type="submit" value = "Remove" name="removehostsubmit"></p>
+
+            <p><input type="submit" value="Insert" name="inserthostsubmit"></p>
     </div>
     </form>
 
-    <!--        a ........................................-->
-    <div class="Member-pay">
-        <label>Member Pay</label>
+    <div class="update-host">
+        <label>Update Host</label>
 
         <form method="post" action="management.php">
             <!-- refresh page -->
-            <input type="text" name="conid" placeholder="Contract ID">
-            <input type="text" name="cusid" placeholder="Customer ID">
+            <input type="text" name="hid" placeholder="Host ID">
+            <input type="text" name="hnam" placeholder="Name">
+            <input type="text" name="hph" placeholder="Phone">
+            <input type="text" name="hadd" placeholder="Address">
 
-            <p><input type="submit" value = "Pay" name="memberpaysubmit"></p>
+            <p><input type="submit" value="Update" name="updatehostsubmit"></p>
     </div>
     </form>
 
-    <div class="Change-StartTime">
-        <label>Change Move-in Time</label>
+    <div class="remove-host"
+    <label>Remove Host</label>
 
-        <form method="post" action="management.php">
-            <!-- refresh page -->
-            <input type="text" name="refn" placeholder="Reservation Reference#">
-            <input type="text" name="stime" placeholder="Start Time">
+    <form method="post" action="management.php">
+        <!-- refresh page -->
+        <input type="text" name="hid" placeholder="Host ID">
 
-            <p><input type="submit" value = "Change Time" name="changetimesubmit"></p>
-    </div>
-    </form>
+        <p><input type="submit" value="Remove" name="removehostsubmit"></p>
+</div>
+</form>
 
-    <!--    update P-->
-    <!--    set P.START_TIME = '$bind1'-->
-    <!--    from TIMEPERIOD P-->
-    <!--    where P.RESERVATION_REFERENCE# = '$bind2'-->
-    <div class="show contract time">
-        <label>Show Booked Time</label>
+<!--        a ........................................-->
+<div class="Member-pay">
+    <label>Member Pay</label>
 
-        <form method="post" action="management.php">
-            <!-- refresh page -->
-            <input type="text" name="thid" placeholder="House ID">
+    <form method="post" action="management.php">
+        <!-- refresh page -->
+        <input type="text" name="conid" placeholder="Contract ID">
+        <input type="text" name="cusid" placeholder="Customer ID">
 
-            <p><input type="submit" value = "Show Now" name="showunavailablesubmit"></p>
-    </div>
-    </form>
+        <p><input type="submit" value="Pay" name="memberpaysubmit"></p>
+</div>
+</form>
 
-    <div class="getcontract">
-        <label>Contract History Lookup</label>
-        <form method="POST" action="management.php">
-            <!--refresh page when submit-->
+<div class="Change-StartTime">
+    <label>Change Move-in Time</label>
 
-            <p><input type="text" name="s_date" placeholder="From When?">
-                <input type="text" name="card_type" placeholder="Card Type"></p>
+    <form method="post" action="management.php">
+        <!-- refresh page -->
+        <input type="text" name="refn" placeholder="Reservation Reference#">
+        <input type="text" name="stime" placeholder="Start Time">
+
+        <p><input type="submit" value="Change Time" name="changetimesubmit"></p>
+</div>
+</form>
+
+<!--    update P-->
+<!--    set P.START_TIME = '$bind1'-->
+<!--    from TIMEPERIOD P-->
+<!--    where P.RESERVATION_REFERENCE# = '$bind2'-->
+<div class="show contract time">
+    <label>Show Booked Time</label>
+
+    <form method="post" action="management.php">
+        <!-- refresh page -->
+        <input type="text" name="thid" placeholder="House ID">
+
+        <p><input type="submit" value="Show Now" name="showunavailablesubmit"></p>
+</div>
+</form>
+
+<div class="getcontract">
+    <label>Contract History Lookup</label>
+    <form method="POST" action="management.php">
+        <!--refresh page when submit-->
+
+        <p><input type="text" name="s_date" placeholder="From When?">
+            <input type="text" name="card_type" placeholder="Card Type"></p>
 
 
-            <p><input type="submit" value="Look Up Contract" name="contracthistory"></p>
-    </div>
-    </form>
+        <p><input type="submit" value="Look Up Contract" name="contracthistory"></p>
+</div>
+</form>
 
 </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -205,7 +194,8 @@ session_start();
 $success = True; //keep track of errors so it redirects the page only if there are no errors
 $db_conn = OCILogon("ora_f4l0b", "a60250157", "dbhost.ugrad.cs.ubc.ca:1522/ug");
 
-function executePlainSQL($cmdstr) { //takes a plain (no bound variables) SQL command and executes it
+function executePlainSQL($cmdstr)
+{ //takes a plain (no bound variables) SQL command and executes it
     //echo "<br>running ".$cmdstr."<br>";
     global $db_conn, $success;
     $statement = OCIParse($db_conn, $cmdstr); //There is a set of comments at the end of the file that describe some of the OCI specific functions and how they work
@@ -231,7 +221,8 @@ function executePlainSQL($cmdstr) { //takes a plain (no bound variables) SQL com
 
 }
 
-function executeBoundSQL($cmdstr, $list) {
+function executeBoundSQL($cmdstr, $list)
+{
     /* Sometimes the same statement will be executed for several times ... only
      the value of variables need to be changed.
      In this case, you don't need to create the statement several times;
@@ -269,7 +260,8 @@ function executeBoundSQL($cmdstr, $list) {
 
 }
 
-function printcontracts($result) { //prints results from a select statement
+function printcontracts($result)
+{ //prints results from a select statement
     echo "<br>These are your contracts:<br>";
     echo "<table>";
     echo "<th><th>House Location</th><th>House Rating</th><th>Daily Rate</th><th>";
@@ -283,7 +275,8 @@ function printcontracts($result) { //prints results from a select statement
 }
 
 
-function printpayments($result) { //prints results from a select statement
+function printpayments($result)
+{ //prints results from a select statement
     echo "<br>Got data from table tab1:<br>";
     echo "<table>";
     echo "<th><th> Payment ID</th><th> Payment Amount</th><th> Payment Method";
@@ -296,7 +289,8 @@ function printpayments($result) { //prints results from a select statement
 
 }
 
-function printResult($result) { //prints results from a select statement
+function printResult($result)
+{ //prints results from a select statement
     echo "<br>Got data from table tab1:<br>";
     echo "<table>";
     echo "<th><th>HOUSE ID</th><th>Location</th><th>Availability</th></th>House Rules</th><th>House Rating</th><th>Host ID</th></th>House Type</th><th>";
@@ -304,7 +298,7 @@ function printResult($result) { //prints results from a select statement
     while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
         // echo $row[0];
         echo "<tr><td>" . $row["HOUSE_ID"] . "</td><td>" . $row["HOUSE_LOCATION"] . "</td><td>" . $row["HOUSE_AVAILABILITY"] . "</td></tr>"
-            . $row["HOUSE_RULES"] . "</td><td>" . $row["HOUSE_RATING"] . "</td><td>" . $row["HOST__ID"] . "</td></tr>". $row["TYPE__NAME"] . "</td></tr>"; //or just use "echo $row[0]"
+            . $row["HOUSE_RULES"] . "</td><td>" . $row["HOUSE_RATING"] . "</td><td>" . $row["HOST__ID"] . "</td></tr>" . $row["TYPE__NAME"] . "</td></tr>"; //or just use "echo $row[0]"
     }
     echo "</table>";
 
@@ -374,7 +368,6 @@ if ($db_conn) {
         $bind4 = $_POST['cph'];
         $bind5 = $_POST['crat'];
         $bind6 = $_POST['cadd'];
-
 
 
         $queryu = "update customer set CUSTOMER_NAME='$bind2', CUSTOMER_EMAIL='$bind3', CUSTOMER_PHONE='$bind4', CUSTOMER_RATING='$bind5', CUSTOMER_ADDRESS='$bind6' where CUSTOMER_ID='$bind1'";
@@ -490,7 +483,7 @@ if ($db_conn) {
         echo "<table>";
         echo "<tr><th>Contract Start_Time</th><th>End_Time</th></tr>";
         while ($row = OCI_Fetch_Array($statement, OCI_BOTH)) {
-            echo "<tr><td>" . $row["START_TIME"] . "</td><td>" . $row["END_TIME"] ."</td></tr>" ; //or just use "echo $row[0]"
+            echo "<tr><td>" . $row["START_TIME"] . "</td><td>" . $row["END_TIME"] . "</td></tr>"; //or just use "echo $row[0]"
         }
         echo "</table>";
 
@@ -525,26 +518,26 @@ if ($db_conn) {
 
         $statement1 = oci_parse($db_conn, $query1);
         oci_execute($statement1);
-        $result1 = OCI_Fetch_Array($statement1,OCI_BOTH);
+        $result1 = OCI_Fetch_Array($statement1, OCI_BOTH);
 
         $statement4 = oci_parse($db_conn, $query4);
         oci_execute($statement4);
-        $result4 = OCI_Fetch_Array($statement4,OCI_BOTH);
+        $result4 = OCI_Fetch_Array($statement4, OCI_BOTH);
 
         $statement2 = oci_parse($db_conn, $query2);
         oci_execute($statement2);
-        $result2 = OCI_Fetch_Array($statement2,OCI_BOTH);
+        $result2 = OCI_Fetch_Array($statement2, OCI_BOTH);
 
         $statement3 = oci_parse($db_conn, $query3);
         oci_execute($statement3);
-        $result3 = OCI_Fetch_Array($statement3,OCI_BOTH);
+        $result3 = OCI_Fetch_Array($statement3, OCI_BOTH);
 
         $allcost = $result1[0] + $result4[0] * $result3[0];
 
-        if($allcost > $result2) {
+        if ($allcost > $result2) {
             $resultAdd = $allcost - $result2[0];
             $leftreward = 0;
-        }else{
+        } else {
             $resultAdd = 0;
             $leftreward = $result2[0] - $allcost;
         }
@@ -577,7 +570,6 @@ if ($db_conn) {
             AND c.reservation_reference# = t2.reservation_reference#)";
 
 
-
         $query2 = "	select type_initialcharge
             from contract c, house h, housetype ht
             where c.reservation_reference# IN(select t1.reservation_reference#
@@ -605,18 +597,18 @@ if ($db_conn) {
 
         $statement2 = oci_parse($db_conn, $query2);
         oci_execute($statement2);
-        $result2 = OCI_Fetch_Array($statement2,OCI_BOTH);
+        $result2 = OCI_Fetch_Array($statement2, OCI_BOTH);
 
         $statement3 = oci_parse($db_conn, $query3);
         oci_execute($statement3);
-        $result3 = OCI_Fetch_Array($statement3,OCI_BOTH);
+        $result3 = OCI_Fetch_Array($statement3, OCI_BOTH);
 
         $statement1 = oci_parse($db_conn, $query1);
         oci_execute($statement1);
         echo "<table>";
         echo "<tr><th>.$bind3.</th><th>Host Revenue</th></tr>";
         while ($row = OCI_Fetch_Array($statement1, OCI_BOTH)) {
-            echo "<tr><td>" . $row[0]*$result3[0]+$result2[0] . "</td></tr>" ; //or just use "echo $row[0]"
+            echo "<tr><td>" . $row[0] * $result3[0] + $result2[0] . "</td></tr>"; //or just use "echo $row[0]"
         }
         echo "</table>";
 
@@ -708,7 +700,6 @@ if ($db_conn) {
     }
 
 
-
     if (array_key_exists('quit', $_POST)) {
         //Getting the values from user and insert data into the table
         //$tuple = array(
@@ -732,7 +723,7 @@ if ($db_conn) {
                     from house
                           join housetype on house.type_name = housetype.type_name
                             join contract on contract.house_id = house.house_id
-                            where contract.customer_id = '$bind1'" ;
+                            where contract.customer_id = '$bind1'";
 
         $statement = oci_parse($db_conn, $query);
         oci_execute($statement);
@@ -780,12 +771,12 @@ if ($db_conn) {
                                 where house.house_id= '$hid'";
 
 
-        $statement = oci_parse ($db_conn, $query);
-        oci_execute ($statement);
+        $statement = oci_parse($db_conn, $query);
+        oci_execute($statement);
         while ($row = OCI_Fetch_Array($statement, OCI_BOTH)) {
 
             if ($s_t <= $row["START_TIME"]) {
-                if ($e_t  >= $row["START_TIME"]) {
+                if ($e_t >= $row["START_TIME"]) {
                     echo "<br> Soory!!! Reservation can't be made, as the following time period is booked already </br>";
                     echo "House " . "<tr><td>" . $row["HOUSE_ID"] . " was booked from  </td><td>" . $row["START_TIME"] . " to </td><td>" . $row["END_TIME"] . "</td></tr>";
                     return;
@@ -803,15 +794,14 @@ if ($db_conn) {
         $row = OCI_Fetch_Array($statement, OCI_BOTH);
 
 
-
         echo $hostid;
-        $number = mt_rand (1000,9999);
+        $number = mt_rand(1000, 9999);
         $query2 = "insert into reservation values ($number, '$cid', '$hostid', '$hid', 'pending')";
         $querytime = "insert into timeperiod values ($number, '$s_t', '$e_t')";
-        $statement = oci_parse ($db_conn, $query2);
-        $statement1 = oci_parse ($db_conn, $querytime);
-        oci_execute ($statement);
-        oci_execute ($statement1);
+        $statement = oci_parse($db_conn, $query2);
+        $statement1 = oci_parse($db_conn, $querytime);
+        oci_execute($statement);
+        oci_execute($statement1);
         echo "reserved!!! Your Reference# is : " . $number;
         OCICommit($db_conn);
 
@@ -829,8 +819,8 @@ if ($db_conn) {
                                       house.type_name= '$type'
                                       AND house.house_rating= '$rating'";
 
-        $statement = oci_parse ($db_conn, $query);
-        oci_execute ($statement);
+        $statement = oci_parse($db_conn, $query);
+        oci_execute($statement);
         printHouses($statement);
         OCICommit($db_conn);
 
@@ -873,13 +863,13 @@ if ($db_conn) {
         } else
             if (array_key_exists('updatesubmit', $_POST)) {
                 // Update tuple using data from user
-                $tuple = array (
+                $tuple = array(
                     ":bind1" => $_POST['oldName'],
                     ":bind2" => $_POST['newName'],
                     ":bind3" => $_POST['oldLocation'],
                     ":bind4" => $_POST['newLocation']
                 );
-                $alltuples = array (
+                $alltuples = array(
                     $tuple
                 );
                 executeBoundSQL("update tab1 set name=:bind2, location=:bind4 where name=:bind1 AND location=:bind3", $alltuples);
@@ -890,7 +880,7 @@ if ($db_conn) {
                     // Insert data into table...
                     executePlainSQL("insert into house values('091', '6335 Thunderbird Crescent', 'yes', 'no smoke', 4, '1234', 'condo' )");
                     // Inserting data into table using bound variables
-                    $list1 = array (
+                    $list1 = array(
                         ":bind1" => '238',
                         ":bind2" => "Crescent Road",
                         ":bind3" => "no",
@@ -900,7 +890,7 @@ if ($db_conn) {
                         ":bind7" => 'house',
 
                     );
-                    $list2 = array (
+                    $list2 = array(
                         ":bind1" => '298',
                         ":bind2" => "Crescent Road",
                         ":bind3" => "yes",
@@ -910,7 +900,7 @@ if ($db_conn) {
                         ":bind7" => 'house',
 
                     );
-                    $list3 = array (
+                    $list3 = array(
                         ":bind1" => '278',
                         ":bind2" => "Math Annex",
                         ":bind3" => "yes",
