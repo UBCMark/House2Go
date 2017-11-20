@@ -1,6 +1,10 @@
-
-.idea/deployment.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
+customer.html
+host.html
+management.html
 .DS_Store
+.idea/dataSources/995e7afc-cbee-4a37-8ecd-c0be089cf9f9.xml
+.idea/dataSources/995e7afc-cbee-4a37-8ecd-c0be089cf9f9.xml
+.idea/dataSources/995e7afc-cbee-4a37-8ecd-c0be089cf9f9.xml
+*.xml
+*.xml
+*.xml
