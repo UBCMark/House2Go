@@ -1,10 +1,8 @@
 customer.html
 host.html
 management.html
-.DS_Store
-.idea/dataSources/995e7afc-cbee-4a37-8ecd-c0be089cf9f9.xml
-.idea/dataSources/995e7afc-cbee-4a37-8ecd-c0be089cf9f9.xml
-.idea/dataSources/995e7afc-cbee-4a37-8ecd-c0be089cf9f9.xml
+*.DS_Store
+*.idea
 *.xml
 *.xml
 *.xml
