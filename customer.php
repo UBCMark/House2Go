@@ -32,25 +32,6 @@
 <h1>Customer View</h1>
 
 <div class="customerView">
-    <form>
-        <div class="search-house">
-            <label>Search House</label>
-            <br>
-            <form method="post" action="customer.php">
-                <!-- refresh page -->
-                <input type="text" name="houseid" placeholder="House ID">
-                <input type="text" name="housenam" placeholder="Name">
-                <input type="text" name="housecity" placeholder="City">
-                <input type="text" name="houseprov" placeholder="Province">
-                <input type="text" name="housecoun" placeholder="Country">
-                <input type="text" name="houserat" placeholder="Rating">
-
-            </form>
-            <br>
-            <button type="submit" name="searchhousesubmit">Search</button>
-        </div>
-    </form>
-
 
     <div class="search-house">
         <label>Search for House</label>
@@ -59,8 +40,7 @@
 
             <p><input type="text" name="housetype" placeholder="House Type">
                 <input type="text" name="rating" placeholder="Rating">
-                <input type="text" name="starttime" placeholder="Start Time">
-                <input type="text" name="endtime" placeholder="End Time"></p>
+            </p>
 
             <p><input type="submit" value="Find House!" name="findhouse"></p>
     </div>

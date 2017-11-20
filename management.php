@@ -338,7 +338,7 @@ if ($db_conn) {
         $queryi = "insert into customer values ('$bind1', '$bind2', '$bind3', $bind4, $bind5, '$bind6')";
         $statement = oci_parse($db_conn, $queryi);
         oci_execute($statement);
-        echo 'insert success!';
+        echo 'insert customer successful!';
 
         //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
         OCICommit($db_conn);
@@ -353,7 +353,7 @@ if ($db_conn) {
 
         $statement = oci_parse($db_conn, $queryd);
         oci_execute($statement);
-        echo 'see you!';
+        echo 'delete customer successful!';
 
         //executeBoundSQL("delete from CUSTOMER where nid=:delNum", $alltuples);
         OCICommit($db_conn);
@@ -373,7 +373,7 @@ if ($db_conn) {
         $queryu = "update customer set CUSTOMER_NAME='$bind2', CUSTOMER_EMAIL='$bind3', CUSTOMER_PHONE='$bind4', CUSTOMER_RATING='$bind5', CUSTOMER_ADDRESS='$bind6' where CUSTOMER_ID='$bind1'";
         $statement = oci_parse($db_conn, $queryu);
         oci_execute($statement);
-        echo 'update success!';
+        echo 'update customer successful!';
 
         //executeBoundSQL("update CUSTOMER set CUSTOMER_NAME=:bind2, CUSTOMER_EMAIL=:bind3, CUSTOMER_PHONE=:bind4, CUSTOMER_RATING=:bind5, CUSTOMER_ADDRESS=:bind6 where CUSTOMER_ID=:bind1", $alltuples);
         OCICommit($db_conn);
@@ -393,8 +393,7 @@ if ($db_conn) {
         $queryi = "insert into host values ('$bind1', '$bind2', '$bind3', '$bind4')";
         $statement = oci_parse($db_conn, $queryi);
         oci_execute($statement);
-        echo 'process....
-                          host add complete!';
+        echo 'insert host successful';
 
         //executeBoundSQL("insert into CUSTOMER values ('$bind1', :bind2, :bind3, :bind4, :bind5, :bind6)", $alltuples);
         OCICommit($db_conn);
@@ -413,8 +412,7 @@ if ($db_conn) {
         $queryuh = "update host set HOST_NAME='$bind2', HOST_PHONE='$bind3', HOST_ADDRESS='$bind4' where HOST_ID='$bind1'";
         $statement = oci_parse($db_conn, $queryuh);
         oci_execute($statement);
-        echo 'process....
-                          new info updated!';
+        echo 'update host successful';
 
         //executeBoundSQL("update CUSTOMER set CUSTOMER_NAME=:bind2, CUSTOMER_EMAIL=:bind3, CUSTOMER_PHONE=:bind4, CUSTOMER_RATING=:bind5, CUSTOMER_ADDRESS=:bind6 where CUSTOMER_ID=:bind1", $alltuples);
         OCICommit($db_conn);
@@ -430,8 +428,7 @@ if ($db_conn) {
 
         $statement = oci_parse($db_conn, $queryd);
         oci_execute($statement);
-        echo 'Attention! This is a DANGEROUS action....
-                          delete host complete';
+        echo 'delete host successful';
 
         //executeBoundSQL("delete from CUSTOMER where nid=:delNum", $alltuples);
 
