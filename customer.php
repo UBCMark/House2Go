@@ -58,8 +58,8 @@
 
                 <p><input type="text" name="house_id" placeholder="House ID">
                     <input type="text" name="customer_id" placeholder="Customer ID">
-                    <input type="text" name="starttime" placeholder="Start Time">
-                    <input type="text" name="endtime" placeholder="End Time"> </p>
+                    <input type="text" name="starttime" placeholder="Start Date - yyyy/mm/dd">
+                    <input type="text" name="endtime" placeholder="End Date - yyyy/mm/dd"> </p>
 
                 <p><input type="submit" value="Reserve!" name="reservehouse"></p>
         </div>
@@ -72,6 +72,7 @@
             <!-- refresh page -->
             <input type="text" name="refn" placeholder="Reservation Reference#">
             <input type="text" name="stime" placeholder="Start Time">
+
 
             <p><input type="submit" value = "Change Time" name="changetimesubmit"></p>
     </div>
