@@ -452,15 +452,24 @@ if ($db_conn) {
         // $tuple = array(
         $bind1 = $_POST['refn'];
         $bind2 = $_POST['stime'];
+        $bind3 = $_POST['etime'];
 
 
-        $queryct = "update TIMEPERIOD
+        $querymi = "update TIMEPERIOD
             set START_TIME = '$bind2'
             where RESERVATION_REFERENCE# = '$bind1'";
 
-        $statement = oci_parse($db_conn, $queryct);
-        oci_execute($statement);
+        $querymo = "update TIMEPERIOD
+            set END_TIME = '$bind3'
+            where RESERVATION_REFERENCE# = '$bind1'";
+
+        $statement1 = oci_parse($db_conn, $querymi);
+        oci_execute($statement1);
         echo "Your MOVE-IN time change to '$bind2'.";
+
+        $statement2 = oci_parse($db_conn, $querymo);
+        oci_execute($statement2);
+        echo "Your MOVE-out time change to '$bind3'.";
 
         //executeBoundSQL("delete from CUSTOMER where nid=:delNum", $alltuples);
 

@@ -66,12 +66,14 @@
     </form>
 
     <div class="Change-StartTime">
-        <label>Change Move-in Time</label>
+        <label>Change Time</label>
 
         <form method="post" action="customer.php">
             <!-- refresh page -->
             <input type="text" name="refn" placeholder="Reservation Reference#">
             <input type="text" name="stime" placeholder="Start Time">
+            <input type="text" name="etime" placeholder="End Time">
+
 
             <p><input type="submit" value = "Change Time" name="changetimesubmit"></p>
     </div>
