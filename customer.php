@@ -31,10 +31,10 @@
 </nav>
 
 
+
 <h1 class="text-center">Customer View</h1>
 
 <div class="column">
-
 
         <div class="search-house">
             <label>Customer Looking for House</label>
@@ -43,8 +43,8 @@
 
                 <p><input type="text" name="housetype" placeholder="House Type">
                     <input type="text" name="rating" placeholder="Rating">
-                    <input type="text" name="starttime" placeholder="Start Time">
-                    <input type="text" name="endtime" placeholder="End Time"> </p>
+                    <input type="text" name="rule" placeholder="Rule - smoke or no smoke?">
+                    </p>
 
                 <p><input type="submit" value="Find House!" name="findhouse"></p>
         </div>
@@ -58,8 +58,8 @@
 
                 <p><input type="text" name="house_id" placeholder="House ID">
                     <input type="text" name="customer_id" placeholder="Customer ID">
-                    <input type="text" name="starttime" placeholder="Start Date - yyyy/mm/dd">
-                    <input type="text" name="endtime" placeholder="End Date - yyyy/mm/dd"> </p>
+                    <input type="text" name="starttime" placeholder="Start Date - yy/mm/dd">
+                    <input type="text" name="endtime" placeholder="End Date - yy/mm/dd"> </p>
 
                 <p><input type="submit" value="Reserve!" name="reservehouse"></p>
         </div>
@@ -71,8 +71,8 @@
         <form method="post" action="customer.php">
             <!-- refresh page -->
             <input type="text" name="refn" placeholder="Reservation Reference#">
-            <input type="text" name="stime" placeholder="Start Date - yyyy/mm/dd">
-            <input type="text" name="etime" placeholder="End Date - yyyy/mm/ddgit ">
+            <input type="text" name="stime" placeholder="Start Date - yy/mm/dd">
+            <input type="text" name="etime" placeholder="End Date - yy/mm/ddgit ">
 
 
 

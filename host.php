@@ -57,8 +57,8 @@
         <form method="post" action="host.php">
             <!-- refresh page -->
             <input type="text" name="hostid" placeholder="Host ID">
-            <input type="text" name="stime" placeholder="Start Time">
-            <input type="text" name="etime" placeholder="End Time">
+            <input type="text" name="stime" placeholder="Start Time: yy-mm-dd">
+            <input type="text" name="etime" placeholder="End Time: yy-mm-dd">
 
             <p><input type="submit" value = "Revenue" name="hostrevenuesubmit"></p>
     </div>
@@ -84,7 +84,7 @@
             <p><input type="text" name="refno" placeholder="Reference#"></p>
             <p><input type="text" name="host_id" placeholder="My Host ID"></p>
 
-            <p><input type="submit" value="See my reservations" name="takereservation"></p>
+            <p><input type="submit" value="Take this reservation" name="takereservation"></p>
     </div>
     </form>
 
