@@ -33,6 +33,7 @@ div {
     float: left;
     margin: 0;
     width: 40%;
+}
 
 table.db-table {
     border-right: 1px solid #ccc;
