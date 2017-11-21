@@ -71,8 +71,8 @@
         <form method="post" action="customer.php">
             <!-- refresh page -->
             <input type="text" name="refn" placeholder="Reservation Reference#">
-            <input type="text" name="stime" placeholder="Start Time">
-            <input type="text" name="etime" placeholder="End Time">
+            <input type="text" name="stime" placeholder="Start Date - yyyy/mm/dd">
+            <input type="text" name="etime" placeholder="End Date - yyyy/mm/ddgit ">
 
 
 
