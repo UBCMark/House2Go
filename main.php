@@ -670,12 +670,14 @@ if ($db_conn) {
 
     }
 
-    if (array_key_exists('Hostrevenuesubmit', $_POST)) {
+    if (array_key_exists('hostrevenuesubmit', $_POST)) {
         // Update tuple using data from user
         // $tuple = array(
+
         $bind1 = $_POST['stime'];
         $bind2 = $_POST['etime'];
         $bind3 = $_POST['hostid'];
+
 
 
         $query1 = "select p123.payment_amount
@@ -1029,7 +1031,7 @@ if ($db_conn) {
 
     if ($_POST && $success) {
         //POST-REDIRECT-GET -- See http://en.wikipedia.org/wiki/Post/Redirect/Get
-        header("location: customer.php");
+        //header("location: customer.php");
         $result = executePlainSQL("select * from house");
     } else {
         // Select data...
