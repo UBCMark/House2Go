@@ -2,4 +2,8 @@ customer.html
 host.html
 management.html
 *.DS_Store
-
+*.idea
+*.xml
+*.xml
+.idea/workspace.xml
+.idea/
