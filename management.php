@@ -612,10 +612,15 @@ if ($db_conn) {
         $bind2 = $_POST['stime'];
 
 
-        $queryct = "update P
-            set P.START_TIME = '$bind2'
-            from TIMEPERIOD P
-            where P.RESERVATION_REFERENCE# = '$bind1'";
+//        $queryct = "update P
+//            set P.START_TIME = '$bind2'
+//            from TIMEPERIOD P
+//            where P.RESERVATION_REFERENCE# = '$bind1'";
+
+
+        $queryct = "update TIMEPERIOD
+                      set START_TIME = '$bind2'
+                      where RESERVATION_REFERENCE# = '$bind1'";
 
         $statement = oci_parse($db_conn, $queryct);
         oci_execute($statement);
@@ -641,7 +646,7 @@ if ($db_conn) {
 
         $statement = oci_parse($db_conn, $queryht);
         oci_execute($statement);
-        echo 'Sorry! Time following time is not available. Good Luck with your other search!';
+        //echo 'Sorry! Time following time is not available. Good Luck with your other search!';
         //$result = OCI_Fetch_Array($statement,OCI_BOTH);
 
         echo '<h4>Contract History</h4>';

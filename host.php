@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="host.css">
 
-
 </head>
 
 <body>
@@ -52,7 +51,7 @@
     </form>
 
 
-    <div class="Host Revenue">
+    <div class="Host-Revenue">
         <label>Host Revenue</label>
 
         <form method="post" action="host.php">
@@ -61,7 +60,7 @@
             <input type="text" name="stime" placeholder="Start Time">
             <input type="text" name="etime" placeholder="End Time">
 
-            <p><input type="submit" value = "Revenue" name="Hostrevenuesubmit"></p>
+            <p><input type="submit" value = "Revenue" name="hostrevenuesubmit"></p>
     </div>
     </form>
 
@@ -76,6 +75,7 @@
     </div>
     </form>
 
+
     <div class= "Take Reservation">
         <label>Take Reservation</label>
         <form method="POST" action="host.php">
@@ -87,7 +87,8 @@
             <p><input type="submit" value="See my reservations" name="takereservation"></p>
     </div>
     </form>
-    </form>
+
+
 </div>
 
 
@@ -710,12 +711,14 @@ if ($db_conn) {
 
     }
 
-    if (array_key_exists('Hostrevenuesubmit', $_POST)) {
+    if (array_key_exists('hostrevenuesubmit', $_POST)) {
         // Update tuple using data from user
         // $tuple = array(
         $bind1 = $_POST['stime'];
         $bind2 = $_POST['etime'];
         $bind3 = $_POST['hostid'];
+
+        echo "123";
 
 
         $query1 = "select p123.payment_amount
@@ -729,13 +732,6 @@ if ($db_conn) {
                                                                                       AND t.reservation_reference# = c1.reservation_reference# 
                                                                                       AND c1.host_id = '$bind3'))";
 
-        /*
-         * echo "<tr><th>ID</th><th>Name</th><th>Location</th></tr>";
-
-    while ($row = OCI_Fetch_Array($result, OCI_BOTH)) {
-        echo "<tr><td>" . $row["NID"] . "</td><td>" . $row["NAME"] . "</td><td>" . $row["LOCATION"] . "</td></tr>"; //or just use "echo $row[0]"
-    }
-         */
 
         $statement1 = oci_parse($db_conn, $query1);
         oci_execute($statement1);
